@@ -1,0 +1,7 @@
+---
+  configservice:
+    Settings:
+      environment: dev
+      statsd:
+        host: statsd
+        port: 8125

@@ -1,0 +1,7 @@
+{
+  "environment": "{{key "configservice/Settings/environment"}}",
+  "statsd": {
+    "host": "{{key "configservice/Settings/statsd/host"}}",
+    "port": {{key "configservice/Settings/statsd/port"}}
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/configservice/configserviceApp /configservice/config.json /configservice | tee /var/log/configservice/out.log

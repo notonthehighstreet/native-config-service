@@ -1,0 +1,3 @@
+#!/bin/bash
+
+consul-template -consul=$CONSUL_URI -template "/configservice/config.ctmpl:/configservice/config.json:pkill configserviceApp"

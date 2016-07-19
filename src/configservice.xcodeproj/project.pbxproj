@@ -1,0 +1,1812 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_LoggerAPI, ______Target_KituraSys, ______Target_Socket, ______Target_CHttpParser, ______Target_KituraNet, ______Target_SwiftyJSON, ______Target_KituraTemplateEngine, ______Target_Kitura, ______Target_HeliumLogger, ______Target_StatsD, ______Target_configservice, ______Target_configserviceApp, ______Target_configserviceTestSuite);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        __PBXFileRef_LoggerAPI_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'LoggerAPI_Info.plist';
+            path = 'configservice.xcodeproj/LoggerAPI_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_LoggerAPI = {
+            isa = PBXGroup;
+            name = LoggerAPI;
+            path = 'Packages/LoggerAPI-0.8.0/Sources/LoggerAPI';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/LoggerAPI-0.8.0/Sources/LoggerAPI/Logger.swift', __PBXFileRef_LoggerAPI_Info.plist);
+        };
+        '__PBXFileRef_Packages/LoggerAPI-0.8.0/Sources/LoggerAPI/Logger.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Logger.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_LoggerAPI = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_LoggerAPI;
+            buildPhases = (CompilePhase_LoggerAPI, ___LinkPhase_LoggerAPI);
+            buildRules = ();
+            dependencies = ();
+            name = LoggerAPI;
+            productName = LoggerAPI;
+            productReference = _____Product_LoggerAPI;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_LoggerAPI = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'LoggerAPI.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_LoggerAPI = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/LoggerAPI-0.8.0/Sources/LoggerAPI/Logger.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/LoggerAPI-0.8.0/Sources/LoggerAPI/Logger.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/LoggerAPI-0.8.0/Sources/LoggerAPI/Logger.swift';
+        };
+        ___LinkPhase_LoggerAPI = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_LoggerAPI = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_LoggerAPI, _ReleaseConf_LoggerAPI);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_LoggerAPI = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/LoggerAPI_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_LoggerAPI = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/LoggerAPI_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_LoggerAPI = {
+            isa = PBXTargetDependency;
+            target = ______Target_LoggerAPI;
+        };
+        __PBXFileRef_KituraSys_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'KituraSys_Info.plist';
+            path = 'configservice.xcodeproj/KituraSys_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_KituraSys = {
+            isa = PBXGroup;
+            name = KituraSys;
+            path = 'Packages/Kitura-Sys-0.18.0/Sources/KituraSys';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/Queue.swift', '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/StringUtils.swift', '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/SysUtils.swift', __PBXFileRef_KituraSys_Info.plist);
+        };
+        '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/Queue.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Queue.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/StringUtils.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StringUtils.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/SysUtils.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SysUtils.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_KituraSys = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_KituraSys;
+            buildPhases = (CompilePhase_KituraSys, ___LinkPhase_KituraSys);
+            buildRules = ();
+            dependencies = (__Dependency_LoggerAPI);
+            name = KituraSys;
+            productName = KituraSys;
+            productReference = _____Product_KituraSys;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_KituraSys = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'KituraSys.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_KituraSys = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/Queue.swift', '__src_cc_ref_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/StringUtils.swift', '__src_cc_ref_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/SysUtils.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/Queue.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/Queue.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/StringUtils.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/StringUtils.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/SysUtils.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-Sys-0.18.0/Sources/KituraSys/SysUtils.swift';
+        };
+        ___LinkPhase_KituraSys = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_LoggerAPI_via_KituraSys);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_LoggerAPI_via_KituraSys = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _______Confs_KituraSys = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_KituraSys, _ReleaseConf_KituraSys);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_KituraSys = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraSys_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_KituraSys = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraSys_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_KituraSys = {
+            isa = PBXTargetDependency;
+            target = ______Target_KituraSys;
+        };
+        __PBXFileRef_Socket_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'Socket_Info.plist';
+            path = 'configservice.xcodeproj/Socket_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_Socket = {
+            isa = PBXGroup;
+            name = Socket;
+            path = 'Packages/Socket-0.5.20/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/Socket-0.5.20/Sources/Socket.swift', '__PBXFileRef_Packages/Socket-0.5.20/Sources/SocketProtocols.swift', '__PBXFileRef_Packages/Socket-0.5.20/Sources/SocketUtils.swift', __PBXFileRef_Socket_Info.plist);
+        };
+        '__PBXFileRef_Packages/Socket-0.5.20/Sources/Socket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Socket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Socket-0.5.20/Sources/SocketProtocols.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SocketProtocols.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Socket-0.5.20/Sources/SocketUtils.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SocketUtils.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Socket = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Socket;
+            buildPhases = (CompilePhase_Socket, ___LinkPhase_Socket);
+            buildRules = ();
+            dependencies = ();
+            name = Socket;
+            productName = Socket;
+            productReference = _____Product_Socket;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_Socket = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'Socket.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Socket = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/Socket-0.5.20/Sources/Socket.swift', '__src_cc_ref_Packages/Socket-0.5.20/Sources/SocketProtocols.swift', '__src_cc_ref_Packages/Socket-0.5.20/Sources/SocketUtils.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/Socket-0.5.20/Sources/Socket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Socket-0.5.20/Sources/Socket.swift';
+        };
+        '__src_cc_ref_Packages/Socket-0.5.20/Sources/SocketProtocols.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Socket-0.5.20/Sources/SocketProtocols.swift';
+        };
+        '__src_cc_ref_Packages/Socket-0.5.20/Sources/SocketUtils.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Socket-0.5.20/Sources/SocketUtils.swift';
+        };
+        ___LinkPhase_Socket = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_Socket = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Socket, _ReleaseConf_Socket);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Socket = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Socket_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Socket = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Socket_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_Socket = {
+            isa = PBXTargetDependency;
+            target = ______Target_Socket;
+        };
+        __PBXFileRef_CHttpParser_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'CHttpParser_Info.plist';
+            path = 'configservice.xcodeproj/CHttpParser_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_CHttpParser = {
+            isa = PBXGroup;
+            name = CHttpParser;
+            path = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/CHttpParser-0.1.1/Sources/CHttpParser/http_parser.c', '__PBXFileRef_Packages/CHttpParser-0.1.1/Sources/CHttpParser/utils.c', __PBXFileRef_CHttpParser_Info.plist);
+        };
+        '__PBXFileRef_Packages/CHttpParser-0.1.1/Sources/CHttpParser/http_parser.c' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.c.c;
+            name = 'http_parser.c';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/CHttpParser-0.1.1/Sources/CHttpParser/utils.c' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.c.c;
+            name = 'utils.c';
+            sourceTree = '<group>';
+        };
+        ______Target_CHttpParser = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_CHttpParser;
+            buildPhases = (CompilePhase_CHttpParser, ___LinkPhase_CHttpParser);
+            buildRules = ();
+            dependencies = ();
+            name = CHttpParser;
+            productName = CHttpParser;
+            productReference = _____Product_CHttpParser;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_CHttpParser = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'CHttpParser.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_CHttpParser = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/CHttpParser-0.1.1/Sources/CHttpParser/http_parser.c', '__src_cc_ref_Packages/CHttpParser-0.1.1/Sources/CHttpParser/utils.c');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/CHttpParser-0.1.1/Sources/CHttpParser/http_parser.c' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/CHttpParser-0.1.1/Sources/CHttpParser/http_parser.c';
+        };
+        '__src_cc_ref_Packages/CHttpParser-0.1.1/Sources/CHttpParser/utils.c' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/CHttpParser-0.1.1/Sources/CHttpParser/utils.c';
+        };
+        ___LinkPhase_CHttpParser = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_CHttpParser = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_CHttpParser, _ReleaseConf_CHttpParser);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_CHttpParser = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/CHttpParser_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; MODULEMAP_FILE = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser/include/module.modulemap'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; DEFINES_MODULE = 'YES'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_CHttpParser = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/CHttpParser_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; MODULEMAP_FILE = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser/include/module.modulemap'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; DEFINES_MODULE = 'YES'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_CHttpParser = {
+            isa = PBXTargetDependency;
+            target = ______Target_CHttpParser;
+        };
+        __PBXFileRef_KituraNet_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'KituraNet_Info.plist';
+            path = 'configservice.xcodeproj/KituraNet_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_KituraNet = {
+            isa = PBXGroup;
+            name = KituraNet;
+            path = 'Packages/Kitura-net-0.20.0/Sources/KituraNet';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/BufferList.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientRequest.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientResponse.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HeadersContainer.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTP.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPServer.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/IncomingMessage.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerRequest.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerResponse.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/SPIUtils.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/HTTPParser.swift', '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/URLParser.swift', __PBXFileRef_KituraNet_Info.plist);
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/BufferList.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'BufferList.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientRequest.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ClientRequest.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientResponse.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ClientResponse.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HeadersContainer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HeadersContainer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTP.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HTTP.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HTTPServer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/IncomingMessage.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'IncomingMessage.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerRequest.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ServerRequest.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerResponse.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ServerResponse.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/SPIUtils.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SPIUtils.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/HTTPParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HTTPParser/HTTPParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/URLParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HTTPParser/URLParser.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_KituraNet = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_KituraNet;
+            buildPhases = (CompilePhase_KituraNet, ___LinkPhase_KituraNet);
+            buildRules = ();
+            dependencies = (__Dependency_LoggerAPI, __Dependency_CHttpParser, __Dependency_Socket, __Dependency_KituraSys);
+            name = KituraNet;
+            productName = KituraNet;
+            productReference = _____Product_KituraNet;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_KituraNet = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'KituraNet.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_KituraNet = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/BufferList.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientRequest.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientResponse.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HeadersContainer.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTP.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPServer.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/IncomingMessage.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerRequest.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerResponse.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/SPIUtils.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/HTTPParser.swift', '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/URLParser.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/BufferList.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/BufferList.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientRequest.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientRequest.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientResponse.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ClientResponse.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HeadersContainer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HeadersContainer.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTP.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTP.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPServer.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/IncomingMessage.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/IncomingMessage.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerRequest.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerRequest.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerResponse.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/ServerResponse.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/SPIUtils.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/SPIUtils.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/HTTPParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/HTTPParser.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/URLParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-net-0.20.0/Sources/KituraNet/HTTPParser/URLParser.swift';
+        };
+        ___LinkPhase_KituraNet = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_LoggerAPI_via_KituraNet, _LinkFileRef_CHttpParser_via_KituraNet, _LinkFileRef_Socket_via_KituraNet, _LinkFileRef_KituraSys_via_KituraNet);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_LoggerAPI_via_KituraNet = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _LinkFileRef_CHttpParser_via_KituraNet = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_CHttpParser;
+        };
+        _LinkFileRef_Socket_via_KituraNet = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socket;
+        };
+        _LinkFileRef_KituraSys_via_KituraNet = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraSys;
+        };
+        _______Confs_KituraNet = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_KituraNet, _ReleaseConf_KituraNet);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_KituraNet = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraNet_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_KituraNet = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraNet_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_KituraNet = {
+            isa = PBXTargetDependency;
+            target = ______Target_KituraNet;
+        };
+        __PBXFileRef_SwiftyJSON_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'SwiftyJSON_Info.plist';
+            path = 'configservice.xcodeproj/SwiftyJSON_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_SwiftyJSON = {
+            isa = PBXGroup;
+            name = SwiftyJSON;
+            path = 'Packages/SwiftyJSON-9.0.0/Source';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/SwiftyJSON-9.0.0/Source/LclJSONSerialization.swift', '__PBXFileRef_Packages/SwiftyJSON-9.0.0/Source/SwiftyJSON.swift', __PBXFileRef_SwiftyJSON_Info.plist);
+        };
+        '__PBXFileRef_Packages/SwiftyJSON-9.0.0/Source/LclJSONSerialization.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'LclJSONSerialization.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/SwiftyJSON-9.0.0/Source/SwiftyJSON.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SwiftyJSON.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SwiftyJSON = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwiftyJSON;
+            buildPhases = (CompilePhase_SwiftyJSON, ___LinkPhase_SwiftyJSON);
+            buildRules = ();
+            dependencies = ();
+            name = SwiftyJSON;
+            productName = SwiftyJSON;
+            productReference = _____Product_SwiftyJSON;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_SwiftyJSON = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'SwiftyJSON.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwiftyJSON = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/SwiftyJSON-9.0.0/Source/LclJSONSerialization.swift', '__src_cc_ref_Packages/SwiftyJSON-9.0.0/Source/SwiftyJSON.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/SwiftyJSON-9.0.0/Source/LclJSONSerialization.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/SwiftyJSON-9.0.0/Source/LclJSONSerialization.swift';
+        };
+        '__src_cc_ref_Packages/SwiftyJSON-9.0.0/Source/SwiftyJSON.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/SwiftyJSON-9.0.0/Source/SwiftyJSON.swift';
+        };
+        ___LinkPhase_SwiftyJSON = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_SwiftyJSON = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwiftyJSON, _ReleaseConf_SwiftyJSON);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwiftyJSON = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/SwiftyJSON_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_SwiftyJSON = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/SwiftyJSON_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_SwiftyJSON = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwiftyJSON;
+        };
+        __PBXFileRef_KituraTemplateEngine_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'KituraTemplateEngine_Info.plist';
+            path = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_KituraTemplateEngine = {
+            isa = PBXGroup;
+            name = KituraTemplateEngine;
+            path = 'Packages/Kitura-TemplateEngine-0.16.0/Sources/KituraTemplateEngine';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/Kitura-TemplateEngine-0.16.0/Sources/KituraTemplateEngine/TemplateEngine.swift', __PBXFileRef_KituraTemplateEngine_Info.plist);
+        };
+        '__PBXFileRef_Packages/Kitura-TemplateEngine-0.16.0/Sources/KituraTemplateEngine/TemplateEngine.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'TemplateEngine.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_KituraTemplateEngine = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_KituraTemplateEngine;
+            buildPhases = (CompilePhase_KituraTemplateEngine, ___LinkPhase_KituraTemplateEngine);
+            buildRules = ();
+            dependencies = ();
+            name = KituraTemplateEngine;
+            productName = KituraTemplateEngine;
+            productReference = _____Product_KituraTemplateEngine;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_KituraTemplateEngine = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'KituraTemplateEngine.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_KituraTemplateEngine = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/Kitura-TemplateEngine-0.16.0/Sources/KituraTemplateEngine/TemplateEngine.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/Kitura-TemplateEngine-0.16.0/Sources/KituraTemplateEngine/TemplateEngine.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-TemplateEngine-0.16.0/Sources/KituraTemplateEngine/TemplateEngine.swift';
+        };
+        ___LinkPhase_KituraTemplateEngine = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_KituraTemplateEngine = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_KituraTemplateEngine, _ReleaseConf_KituraTemplateEngine);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_KituraTemplateEngine = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_KituraTemplateEngine = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_KituraTemplateEngine = {
+            isa = PBXTargetDependency;
+            target = ______Target_KituraTemplateEngine;
+        };
+        __PBXFileRef_Kitura_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'Kitura_Info.plist';
+            path = 'configservice.xcodeproj/Kitura_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_Kitura = {
+            isa = PBXGroup;
+            name = Kitura;
+            path = 'Packages/Kitura-0.20.0/Sources/Kitura';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Error.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Headers.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/HTTPVersion.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/InternalError.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Kitura.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/LinkParameter.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/MimeTypeAcceptor.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Router.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouteRegex.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterElement.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterElementWalker.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterHandler.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterHTTPVerbs.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMethod.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddleware.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareGenerator.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareWalker.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterRequest.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterResponse.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/TemplatingError.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParser.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/JSONBodyParser.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/ParsedBody.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/Part.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/TextBodyParser.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/contentType/ContentType.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/contentType/types.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/FileServer.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift', '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/StaticFileServer.swift', __PBXFileRef_Kitura_Info.plist);
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Error.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Error.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Headers.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Headers.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/HTTPVersion.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HTTPVersion.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/InternalError.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'InternalError.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Kitura.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Kitura.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/LinkParameter.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'LinkParameter.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/MimeTypeAcceptor.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'MimeTypeAcceptor.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Router.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Router.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouteRegex.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouteRegex.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterElement.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterElement.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterElementWalker.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterElementWalker.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterHandler.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterHandler.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterHTTPVerbs.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterHTTPVerbs.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMethod.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterMethod.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddleware.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterMiddleware.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareGenerator.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterMiddlewareGenerator.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareWalker.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterMiddlewareWalker.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterRequest.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterRequest.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterResponse.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'RouterResponse.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/TemplatingError.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'TemplatingError.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/BodyParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/BodyParserProtocol.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/JSONBodyParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/JSONBodyParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/MultiPartBodyParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/ParsedBody.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/ParsedBody.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/Part.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/Part.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/TextBodyParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/TextBodyParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'bodyParser/URLEncodedBodyParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/contentType/ContentType.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'contentType/ContentType.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/contentType/types.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'contentType/types.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'staticFileServer/CacheRelatedHeadersSetter.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'staticFileServer/CompositeHeadersSetter.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/FileServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'staticFileServer/FileServer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'staticFileServer/ResponseHeadersSetter.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/StaticFileServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'staticFileServer/StaticFileServer.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Kitura = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Kitura;
+            buildPhases = (CompilePhase_Kitura, ___LinkPhase_Kitura);
+            buildRules = ();
+            dependencies = (__Dependency_LoggerAPI, __Dependency_CHttpParser, __Dependency_Socket, __Dependency_KituraSys, __Dependency_KituraTemplateEngine, __Dependency_SwiftyJSON, __Dependency_KituraNet);
+            name = Kitura;
+            productName = Kitura;
+            productReference = _____Product_Kitura;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_Kitura = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'Kitura.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Kitura = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Error.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Headers.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/HTTPVersion.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/InternalError.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Kitura.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/LinkParameter.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/MimeTypeAcceptor.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Router.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouteRegex.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterElement.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterElementWalker.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterHandler.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterHTTPVerbs.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMethod.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddleware.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareGenerator.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareWalker.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterRequest.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterResponse.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/TemplatingError.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParser.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/JSONBodyParser.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/ParsedBody.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/Part.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/TextBodyParser.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/contentType/ContentType.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/contentType/types.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/FileServer.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift', '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/StaticFileServer.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Error.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Error.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Headers.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Headers.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/HTTPVersion.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/HTTPVersion.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/InternalError.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/InternalError.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Kitura.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Kitura.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/LinkParameter.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/LinkParameter.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/MimeTypeAcceptor.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/MimeTypeAcceptor.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/Router.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/Router.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouteRegex.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouteRegex.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterElement.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterElement.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterElementWalker.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterElementWalker.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterHandler.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterHandler.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterHTTPVerbs.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterHTTPVerbs.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMethod.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMethod.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddleware.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddleware.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareGenerator.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareGenerator.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareWalker.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterMiddlewareWalker.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterRequest.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterRequest.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/RouterResponse.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/RouterResponse.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/TemplatingError.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/TemplatingError.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParser.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/BodyParserProtocol.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/JSONBodyParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/JSONBodyParser.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/MultiPartBodyParser.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/ParsedBody.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/ParsedBody.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/Part.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/Part.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/TextBodyParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/TextBodyParser.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/bodyParser/URLEncodedBodyParser.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/contentType/ContentType.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/contentType/ContentType.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/contentType/types.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/contentType/types.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CacheRelatedHeadersSetter.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/CompositeHeadersSetter.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/FileServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/FileServer.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/ResponseHeadersSetter.swift';
+        };
+        '__src_cc_ref_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/StaticFileServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Kitura-0.20.0/Sources/Kitura/staticFileServer/StaticFileServer.swift';
+        };
+        ___LinkPhase_Kitura = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_LoggerAPI_via_Kitura, _LinkFileRef_CHttpParser_via_Kitura, _LinkFileRef_Socket_via_Kitura, _LinkFileRef_KituraSys_via_Kitura, _LinkFileRef_KituraTemplateEngine_via_Kitura, _LinkFileRef_SwiftyJSON_via_Kitura, _LinkFileRef_KituraNet_via_Kitura);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_LoggerAPI_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _LinkFileRef_CHttpParser_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_CHttpParser;
+        };
+        _LinkFileRef_Socket_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socket;
+        };
+        _LinkFileRef_KituraSys_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraSys;
+        };
+        _LinkFileRef_KituraTemplateEngine_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraTemplateEngine;
+        };
+        _LinkFileRef_SwiftyJSON_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftyJSON;
+        };
+        _LinkFileRef_KituraNet_via_Kitura = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraNet;
+        };
+        _______Confs_Kitura = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Kitura, _ReleaseConf_Kitura);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Kitura = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Kitura_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Kitura = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Kitura_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_Kitura = {
+            isa = PBXTargetDependency;
+            target = ______Target_Kitura;
+        };
+        __PBXFileRef_HeliumLogger_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'HeliumLogger_Info.plist';
+            path = 'configservice.xcodeproj/HeliumLogger_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_HeliumLogger = {
+            isa = PBXGroup;
+            name = HeliumLogger;
+            path = 'Packages/HeliumLogger-0.9.3/Sources/HeliumLogger';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/HeliumLogger-0.9.3/Sources/HeliumLogger/HeliumLogger.swift', __PBXFileRef_HeliumLogger_Info.plist);
+        };
+        '__PBXFileRef_Packages/HeliumLogger-0.9.3/Sources/HeliumLogger/HeliumLogger.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HeliumLogger.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_HeliumLogger = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_HeliumLogger;
+            buildPhases = (CompilePhase_HeliumLogger, ___LinkPhase_HeliumLogger);
+            buildRules = ();
+            dependencies = (__Dependency_LoggerAPI);
+            name = HeliumLogger;
+            productName = HeliumLogger;
+            productReference = _____Product_HeliumLogger;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_HeliumLogger = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'HeliumLogger.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_HeliumLogger = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/HeliumLogger-0.9.3/Sources/HeliumLogger/HeliumLogger.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/HeliumLogger-0.9.3/Sources/HeliumLogger/HeliumLogger.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/HeliumLogger-0.9.3/Sources/HeliumLogger/HeliumLogger.swift';
+        };
+        ___LinkPhase_HeliumLogger = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_LoggerAPI_via_HeliumLogger);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_LoggerAPI_via_HeliumLogger = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _______Confs_HeliumLogger = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_HeliumLogger, _ReleaseConf_HeliumLogger);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_HeliumLogger = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/HeliumLogger_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_HeliumLogger = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/HeliumLogger_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_HeliumLogger = {
+            isa = PBXTargetDependency;
+            target = ______Target_HeliumLogger;
+        };
+        __PBXFileRef_StatsD_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'StatsD_Info.plist';
+            path = 'configservice.xcodeproj/StatsD_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_StatsD = {
+            isa = PBXGroup;
+            name = StatsD;
+            path = 'Packages/StatsD-0.4.0/Sources/StatsD';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/Socket.swift', '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/SocketError.swift', '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/StatsD.swift', '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/StatsDProtocol.swift', '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/UDPSocket.swift', '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/mocks/MockStatsD.swift', __PBXFileRef_StatsD_Info.plist);
+        };
+        '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/Socket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Socket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/SocketError.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SocketError.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/StatsD.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StatsD.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/StatsDProtocol.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StatsDProtocol.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/UDPSocket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'UDPSocket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/mocks/MockStatsD.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'mocks/MockStatsD.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_StatsD = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_StatsD;
+            buildPhases = (CompilePhase_StatsD, ___LinkPhase_StatsD);
+            buildRules = ();
+            dependencies = ();
+            name = StatsD;
+            productName = StatsD;
+            productReference = _____Product_StatsD;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_StatsD = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'StatsD.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_StatsD = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/Socket.swift', '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/SocketError.swift', '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/StatsD.swift', '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/StatsDProtocol.swift', '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/UDPSocket.swift', '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/mocks/MockStatsD.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/Socket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/Socket.swift';
+        };
+        '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/SocketError.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/SocketError.swift';
+        };
+        '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/StatsD.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/StatsD.swift';
+        };
+        '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/StatsDProtocol.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/StatsDProtocol.swift';
+        };
+        '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/UDPSocket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/UDPSocket.swift';
+        };
+        '__src_cc_ref_Packages/StatsD-0.4.0/Sources/StatsD/mocks/MockStatsD.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/StatsD-0.4.0/Sources/StatsD/mocks/MockStatsD.swift';
+        };
+        ___LinkPhase_StatsD = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_StatsD = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_StatsD, _ReleaseConf_StatsD);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_StatsD = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/StatsD_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_StatsD = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/StatsD_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_StatsD = {
+            isa = PBXTargetDependency;
+            target = ______Target_StatsD;
+        };
+        __PBXFileRef_configservice_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'configservice_Info.plist';
+            path = 'configservice.xcodeproj/configservice_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_configservice = {
+            isa = PBXGroup;
+            name = configservice;
+            path = 'Sources/configservice';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/configservice/Config.swift', '__PBXFileRef_Sources/configservice/handlers/HealthHandler.swift', '__PBXFileRef_Sources/configservice/models/HealthHandlerResponse.swift', '__PBXFileRef_Sources/configservice/models/JSONDictionary.swift', __PBXFileRef_configservice_Info.plist);
+        };
+        '__PBXFileRef_Sources/configservice/Config.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Config.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configservice/handlers/HealthHandler.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'handlers/HealthHandler.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configservice/models/HealthHandlerResponse.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'models/HealthHandlerResponse.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configservice/models/JSONDictionary.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'models/JSONDictionary.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_configservice = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_configservice;
+            buildPhases = (CompilePhase_configservice, ___LinkPhase_configservice);
+            buildRules = ();
+            dependencies = (__Dependency_CHttpParser, __Dependency_Socket, __Dependency_KituraSys, __Dependency_LoggerAPI, __Dependency_KituraTemplateEngine, __Dependency_SwiftyJSON, __Dependency_KituraNet, __Dependency_StatsD, __Dependency_HeliumLogger, __Dependency_Kitura);
+            name = configservice;
+            productName = configservice;
+            productReference = _____Product_configservice;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_configservice = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'configservice.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_configservice = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/configservice/Config.swift', '__src_cc_ref_Sources/configservice/handlers/HealthHandler.swift', '__src_cc_ref_Sources/configservice/models/HealthHandlerResponse.swift', '__src_cc_ref_Sources/configservice/models/JSONDictionary.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/configservice/Config.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configservice/Config.swift';
+        };
+        '__src_cc_ref_Sources/configservice/handlers/HealthHandler.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configservice/handlers/HealthHandler.swift';
+        };
+        '__src_cc_ref_Sources/configservice/models/HealthHandlerResponse.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configservice/models/HealthHandlerResponse.swift';
+        };
+        '__src_cc_ref_Sources/configservice/models/JSONDictionary.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configservice/models/JSONDictionary.swift';
+        };
+        ___LinkPhase_configservice = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CHttpParser_via_configservice, _LinkFileRef_Socket_via_configservice, _LinkFileRef_KituraSys_via_configservice, _LinkFileRef_LoggerAPI_via_configservice, _LinkFileRef_KituraTemplateEngine_via_configservice, _LinkFileRef_SwiftyJSON_via_configservice, _LinkFileRef_KituraNet_via_configservice, _LinkFileRef_StatsD_via_configservice, _LinkFileRef_HeliumLogger_via_configservice, _LinkFileRef_Kitura_via_configservice);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_CHttpParser_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_CHttpParser;
+        };
+        _LinkFileRef_Socket_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socket;
+        };
+        _LinkFileRef_KituraSys_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraSys;
+        };
+        _LinkFileRef_LoggerAPI_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _LinkFileRef_KituraTemplateEngine_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraTemplateEngine;
+        };
+        _LinkFileRef_SwiftyJSON_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftyJSON;
+        };
+        _LinkFileRef_KituraNet_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraNet;
+        };
+        _LinkFileRef_StatsD_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_StatsD;
+        };
+        _LinkFileRef_HeliumLogger_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_HeliumLogger;
+        };
+        _LinkFileRef_Kitura_via_configservice = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Kitura;
+        };
+        _______Confs_configservice = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_configservice, _ReleaseConf_configservice);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_configservice = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/configservice_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_configservice = {
+            isa = XCBuildConfiguration;
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/configservice_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_configservice = {
+            isa = PBXTargetDependency;
+            target = ______Target_configservice;
+        };
+        _______Group_configserviceApp = {
+            isa = PBXGroup;
+            name = configserviceApp;
+            path = 'Sources/configserviceApp';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/configserviceApp/main.swift', '__PBXFileRef_Sources/configserviceApp/Metrics.swift', '__PBXFileRef_Sources/configserviceApp/Routing.swift');
+        };
+        '__PBXFileRef_Sources/configserviceApp/main.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'main.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configserviceApp/Metrics.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Metrics.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configserviceApp/Routing.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Routing.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_configserviceApp = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_configserviceApp;
+            buildPhases = (CompilePhase_configserviceApp, ___LinkPhase_configserviceApp);
+            buildRules = ();
+            dependencies = (__Dependency_CHttpParser, __Dependency_Socket, __Dependency_KituraSys, __Dependency_LoggerAPI, __Dependency_KituraTemplateEngine, __Dependency_SwiftyJSON, __Dependency_KituraNet, __Dependency_StatsD, __Dependency_HeliumLogger, __Dependency_Kitura, __Dependency_configservice);
+            name = configserviceApp;
+            productName = configserviceApp;
+            productReference = _____Product_configserviceApp;
+            productType = 'com.apple.product-type.tool';
+        };
+        _____Product_configserviceApp = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.executable';
+            path = 'configserviceApp';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_configserviceApp = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/configserviceApp/main.swift', '__src_cc_ref_Sources/configserviceApp/Metrics.swift', '__src_cc_ref_Sources/configserviceApp/Routing.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/configserviceApp/main.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configserviceApp/main.swift';
+        };
+        '__src_cc_ref_Sources/configserviceApp/Metrics.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configserviceApp/Metrics.swift';
+        };
+        '__src_cc_ref_Sources/configserviceApp/Routing.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configserviceApp/Routing.swift';
+        };
+        ___LinkPhase_configserviceApp = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CHttpParser_via_configserviceApp, _LinkFileRef_Socket_via_configserviceApp, _LinkFileRef_KituraSys_via_configserviceApp, _LinkFileRef_LoggerAPI_via_configserviceApp, _LinkFileRef_KituraTemplateEngine_via_configserviceApp, _LinkFileRef_SwiftyJSON_via_configserviceApp, _LinkFileRef_KituraNet_via_configserviceApp, _LinkFileRef_StatsD_via_configserviceApp, _LinkFileRef_HeliumLogger_via_configserviceApp, _LinkFileRef_Kitura_via_configserviceApp, _LinkFileRef_configservice_via_configserviceApp);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_CHttpParser_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_CHttpParser;
+        };
+        _LinkFileRef_Socket_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socket;
+        };
+        _LinkFileRef_KituraSys_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraSys;
+        };
+        _LinkFileRef_LoggerAPI_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _LinkFileRef_KituraTemplateEngine_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraTemplateEngine;
+        };
+        _LinkFileRef_SwiftyJSON_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftyJSON;
+        };
+        _LinkFileRef_KituraNet_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraNet;
+        };
+        _LinkFileRef_StatsD_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_StatsD;
+        };
+        _LinkFileRef_HeliumLogger_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_HeliumLogger;
+        };
+        _LinkFileRef_Kitura_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Kitura;
+        };
+        _LinkFileRef_configservice_via_configserviceApp = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_configservice;
+        };
+        _______Confs_configserviceApp = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_configserviceApp, _ReleaseConf_configserviceApp);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_configserviceApp = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_configserviceApp = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_configserviceApp = {
+            isa = PBXTargetDependency;
+            target = ______Target_configserviceApp;
+        };
+        __PBXFileRef_configserviceTestSuite_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'configserviceTestSuite_Info.plist';
+            path = 'configservice.xcodeproj/configserviceTestSuite_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_configserviceTestSuite = {
+            isa = PBXGroup;
+            name = configserviceTestSuite;
+            path = 'Tests/configservice';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/configservice/HealthHandlerTests.swift', '__PBXFileRef_Tests/configservice/models/HealthHandlerResponseTests.swift', __PBXFileRef_configserviceTestSuite_Info.plist);
+        };
+        '__PBXFileRef_Tests/configservice/HealthHandlerTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'HealthHandlerTests.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Tests/configservice/models/HealthHandlerResponseTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'models/HealthHandlerResponseTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_configserviceTestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_configserviceTestSuite;
+            buildPhases = (CompilePhase_configserviceTestSuite, ___LinkPhase_configserviceTestSuite);
+            buildRules = ();
+            dependencies = (__Dependency_CHttpParser, __Dependency_Socket, __Dependency_KituraSys, __Dependency_LoggerAPI, __Dependency_KituraTemplateEngine, __Dependency_SwiftyJSON, __Dependency_KituraNet, __Dependency_StatsD, __Dependency_HeliumLogger, __Dependency_Kitura, __Dependency_configservice);
+            name = configserviceTestSuite;
+            productName = configserviceTestSuite;
+            productReference = _____Product_configserviceTestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_configserviceTestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'configserviceTestSuite.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_configserviceTestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/configservice/HealthHandlerTests.swift', '__src_cc_ref_Tests/configservice/models/HealthHandlerResponseTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/configservice/HealthHandlerTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/configservice/HealthHandlerTests.swift';
+        };
+        '__src_cc_ref_Tests/configservice/models/HealthHandlerResponseTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/configservice/models/HealthHandlerResponseTests.swift';
+        };
+        ___LinkPhase_configserviceTestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_CHttpParser_via_configserviceTestSuite, _LinkFileRef_Socket_via_configserviceTestSuite, _LinkFileRef_KituraSys_via_configserviceTestSuite, _LinkFileRef_LoggerAPI_via_configserviceTestSuite, _LinkFileRef_KituraTemplateEngine_via_configserviceTestSuite, _LinkFileRef_SwiftyJSON_via_configserviceTestSuite, _LinkFileRef_KituraNet_via_configserviceTestSuite, _LinkFileRef_StatsD_via_configserviceTestSuite, _LinkFileRef_HeliumLogger_via_configserviceTestSuite, _LinkFileRef_Kitura_via_configserviceTestSuite, _LinkFileRef_configservice_via_configserviceTestSuite);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_CHttpParser_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_CHttpParser;
+        };
+        _LinkFileRef_Socket_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Socket;
+        };
+        _LinkFileRef_KituraSys_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraSys;
+        };
+        _LinkFileRef_LoggerAPI_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_LoggerAPI;
+        };
+        _LinkFileRef_KituraTemplateEngine_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraTemplateEngine;
+        };
+        _LinkFileRef_SwiftyJSON_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_SwiftyJSON;
+        };
+        _LinkFileRef_KituraNet_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_KituraNet;
+        };
+        _LinkFileRef_StatsD_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_StatsD;
+        };
+        _LinkFileRef_HeliumLogger_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_HeliumLogger;
+        };
+        _LinkFileRef_Kitura_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Kitura;
+        };
+        _LinkFileRef_configservice_via_configserviceTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_configservice;
+        };
+        _______Confs_configserviceTestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_configserviceTestSuite, _ReleaseConf_configserviceTestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_configserviceTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configserviceTestSuite_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_configserviceTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configserviceTestSuite_Info.plist'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_configserviceTestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_configserviceTestSuite;
+        };
+        '__PBXFileRef_configservice.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            name = 'Project.xcconfig';
+            path = 'configservice.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_configservice.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_LoggerAPI, _______Group_KituraSys, _______Group_Socket, _______Group_CHttpParser, _______Group_KituraNet, _______Group_SwiftyJSON, _______Group_KituraTemplateEngine, _______Group_Kitura, _______Group_HeliumLogger, _______Group_StatsD, _______Group_configservice, _______Group_configserviceApp);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        Dependencies_ = {
+            isa = PBXGroup;
+            children = (_______Group_LoggerAPI, _______Group_KituraSys, _______Group_Socket, _______Group_CHttpParser, _______Group_KituraNet, _______Group_SwiftyJSON, _______Group_KituraTemplateEngine, _______Group_Kitura, _______Group_HeliumLogger, _______Group_StatsD);
+            name = Dependencies;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_configserviceTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_configserviceTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_LoggerAPI, _____Product_KituraSys, _____Product_Socket, _____Product_CHttpParser, _____Product_KituraNet, _____Product_SwiftyJSON, _____Product_KituraTemplateEngine, _____Product_Kitura, _____Product_HeliumLogger, _____Product_StatsD, _____Product_configservice, _____Product_configserviceApp);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_configservice.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_configservice.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}

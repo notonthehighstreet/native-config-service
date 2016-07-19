@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme LastUpgradeVersion = "9999" version = "1.3">
+  <BuildAction parallelizeBuildables = "YES" buildImplicitDependencies = "YES">
+    <BuildActionEntries>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_LoggerAPI"
+          BuildableName = "LoggerAPI.framework"
+          BlueprintName = "LoggerAPI"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraSys"
+          BuildableName = "KituraSys.framework"
+          BlueprintName = "KituraSys"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Socket"
+          BuildableName = "Socket.framework"
+          BlueprintName = "Socket"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_CHttpParser"
+          BuildableName = "CHttpParser.framework"
+          BlueprintName = "CHttpParser"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraNet"
+          BuildableName = "KituraNet.framework"
+          BlueprintName = "KituraNet"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_SwiftyJSON"
+          BuildableName = "SwiftyJSON.framework"
+          BlueprintName = "SwiftyJSON"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_KituraTemplateEngine"
+          BuildableName = "KituraTemplateEngine.framework"
+          BlueprintName = "KituraTemplateEngine"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_Kitura"
+          BuildableName = "Kitura.framework"
+          BlueprintName = "Kitura"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_HeliumLogger"
+          BuildableName = "HeliumLogger.framework"
+          BlueprintName = "HeliumLogger"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_StatsD"
+          BuildableName = "StatsD.framework"
+          BlueprintName = "StatsD"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_configservice"
+          BuildableName = "configservice.framework"
+          BlueprintName = "configservice"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+      <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
+        <BuildableReference
+          BuildableIdentifier = "primary"
+          BlueprintIdentifier = "______Target_configserviceApp"
+          BuildableName = "configserviceApp"
+          BlueprintName = "configserviceApp"
+          ReferencedContainer = "container:configservice.xcodeproj">
+        </BuildableReference>
+      </BuildActionEntry>
+    </BuildActionEntries>
+  </BuildAction>
+  <TestAction
+    buildConfiguration = "Debug"
+    selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+    selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+    shouldUseLaunchSchemeArgsEnv = "YES">
+    <Testables>
+    <TestableReference
+      skipped = "NO">
+      <BuildableReference
+        BuildableIdentifier = "primary"
+        BlueprintIdentifier = "______Target_configserviceTestSuite"
+        BuildableName = "configserviceTestSuite.xctest"
+        BlueprintName = "configserviceTestSuite"
+        ReferencedContainer = "container:configservice.xcodeproj">
+      </BuildableReference>
+    </TestableReference>
+    </Testables>
+  </TestAction>
+</Scheme>

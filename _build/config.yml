@@ -1,0 +1,45 @@
+---
+application_name: 'configservice'
+namespace: 'notonthehighstreet'
+generator_name: 'minke-generator-swift'
+docker_registry:
+  url:
+  user:
+  password:
+  email:
+  namespace:
+docker:
+  application_docker_file: './dockerfile/configservice/'
+  application_compose_file: './dockercompose/configservice/docker-compose.yml'
+fetch:
+  enabled: true
+test:
+  enabled: true
+build:
+  post:
+    copy:
+      -
+        from: '../src/.build/debug/configserviceApp'
+        to: './dockerfile/configservice'
+      -
+        from: './swagger_spec/swagger.yml'
+        to: './dockerfile/configservice/swagger_spec'
+run:
+  consul_loader:
+    config_file: './consul_keys.yml'
+    url:
+      address: consul
+      port: 8500
+      type: bridge
+cucumber:
+  consul_loader:
+    config_file: './consul_keys.yml'
+    url:
+      address: consul
+      port: 8500
+      type: bridge
+  health_check:
+    address: configservice
+    port: 8090
+    path: /v1/health
+    type: bridge
