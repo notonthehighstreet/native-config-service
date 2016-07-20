@@ -3,3 +3,4 @@ vendor
 .DS_Store
 /_build/dockerfile/configservice/configserviceApp
 /src/Packages
+/src/configservice.xcodeproj/

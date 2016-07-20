@@ -1,7 +1,31 @@
 {
-  "environment": "{{key "configservice/Settings/environment"}}",
+  "environment": "{{key "configService/Settings/environment"}}",
   "statsd": {
-    "host": "{{key "configservice/Settings/statsd/host"}}",
-    "port": {{key "configservice/Settings/statsd/port"}}
+    "host": "{{key "configService/Settings/statsd/host"}}",
+    "port": {{key "configService/Settings/statsd/port"}}
+  }
+  "ios": {
+    "a": {
+      "base": "{{key "configService/Settings/ios/a/base"}}",
+      "privacy_policy": "{{key "configService/Settings/ios/a/privacy_policy"}}",
+      "version_check": "{{key "configService/Settings/ios/a/version_check"}}",
+      "homepage": "{{key "configService/Settings/ios/a/homepage"}}",
+      "homepage_favorites": "{{key "configService/Settings/ios/a/homepage_favorites"}}",
+      "products": "{{key "configService/Settings/ios/a/products"}}",
+      "products_availabilities": "{{key "configService/Settings/ios/a/products_availabilities"}}",
+      "products_batched": "{{key "configService/Settings/ios/a/products_batched"}}",
+      "products_validation": "{{key "configService/Settings/ios/a/products_validation"}}",
+      "search": "{{key "configService/Settings/ios/a/search"}}",
+      "search_suggested": "{{key "configService/Settings/ios/a/search_suggested"}}",
+      "basket_validation": "{{key "configService/Settings/ios/a/basket_validation"}}",
+      "delivery_services": "{{key "configService/Settings/ios/a/delivery_services"}}",
+      "payment_methods": "{{key "configService/Settings/ios/a/payment_methods"}}",
+      "addresses_postcode_lookup": "{{key "configService/Settings/ios/a/addresses_postcode_lookup"}}",
+      "checkout": "{{key "configService/Settings/ios/a/checkout"}}",
+      "checkout_customer": "{{key "configService/Settings/ios/a/checkout_customer"}}",
+      "checkout_totals": "{{key "configService/Settings/ios/a/checkout_totals"}}",
+      "checkout_purchase": "{{key "configService/Settings/ios/a/checkout_purchase"}}",
+      "checkout_pay": "{{key "configService/Settings/ios/a/checkout_pay"}}"
+    }
   }
 }
