@@ -20,8 +20,18 @@ class Routing {
     let router = Router()
 
     setupHealthRoutes(router: router, path: "/v1/health")
+    setupTestRoute(router:router, path: "/test")
 
     return router
+  }
+
+  private func setupTestRoute(router: Router, path: String) {
+    router.get(path) {
+      request, response, next in
+        self.sendResponse(response: response, status: HTTPStatusCode.OK, data: JSON(["name":"Kiera", "age": 25]))
+
+        next()
+    }
   }
 
   // setup the router with our handlers
