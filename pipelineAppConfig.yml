@@ -1,0 +1,9 @@
+name: configservice
+acceptanceTestJob:
+buildJob:
+buildContainerJob:
+slackChannel: https://hooks.slack.com/services/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
+cdEnabledAfterPushToMaster: true
+dockerFileDirectory:
+defaultEnvId:
+dependencies:
