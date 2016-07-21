@@ -1,8 +1,13 @@
 swagger: '2.0'
 info:
   title: configservice
-  description: configservice Description
+  description: configService Description
   version: 1.0.0
+securityDefinitions:
+  apikey:
+    type: apiKey
+    name: X-Notonthehighstreet-Token
+    in: header
 host: api.test.com
 schemes:
   - http
@@ -25,6 +30,69 @@ paths:
             type: array
             items:
               $ref: '#/definitions/HealthResponse'
+  /api-urls/{ABTestIdentifier}:
+    get:
+      security:
+        - apikey: []
+      produces:
+      - "application/json"
+      description: |
+        Gets an JSON object of URLS to be consumed by the native app.
+      parameters:
+        -
+          name: ABTestIdentifier
+          in: path
+          description: A/B identifier
+          required: true
+          type: string
+          minLength: 1
+          maxLength: 1
+          pattern: "[A-Z]"
+
+        -
+          name: User-Agent
+          in: header
+          description: |
+            User-agent string from the app, in the format `Gift%20Finder/{version} CFNetwork/758.3.15 Darwin/15.5.0`.
+          required: true
+          type: string
+          pattern: "^Gift%20Finder\\/([\\d\\.]+)"
+
+      responses:
+        200:
+          description: Successful response
+          examples:
+            application/json: |-
+              {
+                  "homepage-endpoint-url": "https://api.notonthehighstreet.com/api/v1/homepage",
+                  "search-endpoint": "https://api.notonthehighstreet.com/api/products/search",
+                  "checkout-endpoint": "https://api.notonthehighstreet.com/api/checkout/v1/checkout",
+                  "checkout-totals-endpoint": "https://api.notonthehighstreet.com/api/checkout/v1/totals"
+              }
+        400:
+          description: Bad request
+          examples:
+            application/json: |-
+              {
+                  "error": "Bad request",
+                  "error-code": 400
+              }
+        401:
+          description: Unauthorized
+          examples:
+            application/json: |-
+              {
+                  "error": "Unauthorized",
+                  "error-code": 401
+              }
+        500:
+          description: Server error
+          examples:
+            application/json: |-
+              {
+                  "error": "Internal server error",
+                  "error-code": 500
+              }
 definitions:
   HealthResponse:
     type: object
