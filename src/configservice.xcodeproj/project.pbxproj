@@ -1365,12 +1365,18 @@
             name = configservice;
             path = 'Sources/configservice';
             sourceTree = '<group>';
-            children = ('__PBXFileRef_Sources/configservice/Config.swift', '__PBXFileRef_Sources/configservice/handlers/HealthHandler.swift', '__PBXFileRef_Sources/configservice/models/HealthHandlerResponse.swift', '__PBXFileRef_Sources/configservice/models/JSONDictionary.swift', __PBXFileRef_configservice_Info.plist);
+            children = ('__PBXFileRef_Sources/configservice/Config.swift', '__PBXFileRef_Sources/configservice/handlers/ConfigHandler.swift', '__PBXFileRef_Sources/configservice/handlers/HealthHandler.swift', '__PBXFileRef_Sources/configservice/models/HealthHandlerResponse.swift', '__PBXFileRef_Sources/configservice/models/JSONDictionary.swift', '__PBXFileRef_Sources/configservice/service/ConfigService.swift', __PBXFileRef_configservice_Info.plist);
         };
         '__PBXFileRef_Sources/configservice/Config.swift' = {
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'Config.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configservice/handlers/ConfigHandler.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'handlers/ConfigHandler.swift';
             sourceTree = '<group>';
         };
         '__PBXFileRef_Sources/configservice/handlers/HealthHandler.swift' = {
@@ -1389,6 +1395,12 @@
             isa = PBXFileReference;
             lastKnownFileType = sourcecode.swift;
             name = 'models/JSONDictionary.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/configservice/service/ConfigService.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'service/ConfigService.swift';
             sourceTree = '<group>';
         };
         ______Target_configservice = {
@@ -1410,12 +1422,16 @@
         };
         CompilePhase_configservice = {
             isa = PBXSourcesBuildPhase;
-            files = ('__src_cc_ref_Sources/configservice/Config.swift', '__src_cc_ref_Sources/configservice/handlers/HealthHandler.swift', '__src_cc_ref_Sources/configservice/models/HealthHandlerResponse.swift', '__src_cc_ref_Sources/configservice/models/JSONDictionary.swift');
+            files = ('__src_cc_ref_Sources/configservice/Config.swift', '__src_cc_ref_Sources/configservice/handlers/ConfigHandler.swift', '__src_cc_ref_Sources/configservice/handlers/HealthHandler.swift', '__src_cc_ref_Sources/configservice/models/HealthHandlerResponse.swift', '__src_cc_ref_Sources/configservice/models/JSONDictionary.swift', '__src_cc_ref_Sources/configservice/service/ConfigService.swift');
             runOnlyForDeploymentPostprocessing = 0;
         };
         '__src_cc_ref_Sources/configservice/Config.swift' = {
             isa = PBXBuildFile;
             fileRef = '__PBXFileRef_Sources/configservice/Config.swift';
+        };
+        '__src_cc_ref_Sources/configservice/handlers/ConfigHandler.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configservice/handlers/ConfigHandler.swift';
         };
         '__src_cc_ref_Sources/configservice/handlers/HealthHandler.swift' = {
             isa = PBXBuildFile;
@@ -1428,6 +1444,10 @@
         '__src_cc_ref_Sources/configservice/models/JSONDictionary.swift' = {
             isa = PBXBuildFile;
             fileRef = '__PBXFileRef_Sources/configservice/models/JSONDictionary.swift';
+        };
+        '__src_cc_ref_Sources/configservice/service/ConfigService.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/configservice/service/ConfigService.swift';
         };
         ___LinkPhase_configservice = {
             isa = PBXFrameworksBuildPhase;

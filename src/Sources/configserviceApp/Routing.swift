@@ -20,16 +20,21 @@ class Routing {
     let router = Router()
 
     setupHealthRoutes(router: router, path: "/v1/health")
-    setupTestRoute(router:router, path: "/test")
+    setupConfigRoute(router:router, path: "/v1/config/a")
 
     return router
   }
 
-  private func setupTestRoute(router: Router, path: String) {
+  private func setupConfigRoute(router: Router, path: String) {
     router.get(path) {
       request, response, next in
-        self.sendResponse(response: response, status: HTTPStatusCode.OK, data: JSON(["name":"Kiera", "age": 25]))
 
+        ConfigHandler.handle(statsD: self.statsD, config: self.config) {
+          (status: HTTPStatusCode, data: JSON?) in
+
+            self.sendResponse(response: response, status: status, data: data)
+        }
+        // execute next middleware in sequence
         next()
     }
   }
