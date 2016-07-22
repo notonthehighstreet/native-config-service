@@ -3,7 +3,7 @@
   "statsd": {
     "host": "{{key "configservice/Settings/statsd/host"}}",
     "port": {{key "configservice/Settings/statsd/port"}}
-  }
+  },
   "ios": {
     "a": {
       "base": "{{key "configservice/Settings/ios/a/base"}}",
