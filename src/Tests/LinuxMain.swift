@@ -5,6 +5,7 @@ import StatsD
 
 XCTMain([
   testCase(HealthHandlerResponseTests.allTests),
-  testCase(HealthHandlerTests.allTests)
+  testCase(HealthHandlerTests.allTests),
+  testCase(ConfigHandlerTests.allTests)
   ]
 )
