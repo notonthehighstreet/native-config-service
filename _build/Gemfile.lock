@@ -17,7 +17,7 @@ GEM
       nokogiri (>= 1.6.0)
       rspec (>= 2.12.0)
     diff-lcs (1.2.5)
-    docker-api (1.29.0)
+    docker-api (1.29.1)
       excon (>= 0.38.0)
       json
     domain_name (0.5.20160615)
