@@ -20,7 +20,7 @@ class Routing {
     let router = Router()
 
     setupHealthRoutes(router: router, path: "/v1/health")
-    setupConfigRoute(router:router, path: "/v1/config/a")
+    setupConfigRoute(router:router, path: "/v1/config/:abBranch")
 
     return router
   }
@@ -29,7 +29,7 @@ class Routing {
     router.get(path) {
       request, response, next in
 
-        ConfigHandler.handle(statsD: self.statsD, config: self.config) {
+        ConfigHandler.handle(statsD: self.statsD, config: self.config, params: request.parameters) {
           (status: HTTPStatusCode, data: JSON?) in
 
             self.sendResponse(response: response, status: status, data: data)

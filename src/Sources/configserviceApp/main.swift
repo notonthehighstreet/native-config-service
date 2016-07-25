@@ -46,7 +46,3 @@ statsD!.increment(bucket: "\(Buckets.Application.rawValue).\(Buckets.Started.raw
 
 Kitura.addHTTPServer(onPort: 8090, with: router!)
 Kitura.run()
-
-// do some testing shit (unit & cucumber)
-// config["os"]["a"]
-// return ^^ from handler
