@@ -17,17 +17,34 @@ public class ConfigHandlerTests: XCTestCase {
     return JSON(["ios": ["a": ["balls": "boobs"]]])
   }
 
-  public func testReturnsHTTPStatusOK() {
-    ConfigHandler.handle(statsD: mockStatsD!, abBranch: "a", config: getConfig()) {
+  public func testReturnsHTTPStatusOKWithValidParams() {
+    var params = [String: String]()
+    params["abBranch"] = "a"
+
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), params: params) {
       (status: HTTPStatusCode, data: JSON?) in
         XCTAssertEqual(HTTPStatusCode.OK, status)
     }
   }
 
   public func testReturnsValidResponse() {
-    ConfigHandler.handle(statsD: mockStatsD!, abBranch: "a", config: getConfig()) {
+    var params = [String: String]()
+    params["abBranch"] = "a"
+
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), params: params) {
       (status: HTTPStatusCode, data: JSON?) in
         XCTAssertEqual("boobs", data!["balls"])
+    }
+  }
+
+  public func testParamsInvalidWithId() {
+    var params = [String: String]()
+    params["abBranch"] = "ab"
+
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), params: params ) {
+      (status: HTTPStatusCode, data: JSON?) in
+        XCTAssertEqual(HTTPStatusCode.badRequest, status)
+        XCTAssertNil(data)
     }
   }
 }
@@ -35,8 +52,9 @@ public class ConfigHandlerTests: XCTestCase {
 extension ConfigHandlerTests {
   static var allTests: [(String, (ConfigHandlerTests) -> () throws -> Void)] {
     return [
-      ("testReturnsHTTPStatusOK", testReturnsHTTPStatusOK),
-      ("testReturnsValidResponse", testReturnsValidResponse)
+      ("testReturnsHTTPStatusOKWithValidParams", testReturnsHTTPStatusOKWithValidParams),
+      ("testReturnsValidResponse", testReturnsValidResponse),
+      ("testParamsInvalidWithId", testParamsInvalidWithId)
     ]
   }
 }
