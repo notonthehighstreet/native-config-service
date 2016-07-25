@@ -26,10 +26,12 @@ class Routing {
   }
 
   private func setupConfigRoute(router: Router, path: String) {
+    router.get(path, middleware: ValidationMiddleware(statsD: statsD))
+
     router.get(path) {
       request, response, next in
-
-        ConfigHandler.handle(statsD: self.statsD, config: self.config, params: request.parameters) {
+        let params = request.parameters
+        ConfigHandler.handle(statsD: self.statsD, config: self.config, abBranch: params["abBranch"]!) {
           (status: HTTPStatusCode, data: JSON?) in
 
             self.sendResponse(response: response, status: status, data: data)
