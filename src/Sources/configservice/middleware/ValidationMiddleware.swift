@@ -15,6 +15,9 @@ public class ValidationMiddleware: RouterMiddleware {
   public func handle(request: RouterRequest, response: RouterResponse, next: () -> Void) {
     let (validParams, abBranch) = validateParams(params: request.parameters)
 
+    Log.info("\(validParams) \(abBranch)")
+
+
     if validParams && abBranch != nil {
       next()
     } else {
@@ -39,9 +42,6 @@ public class ValidationMiddleware: RouterMiddleware {
   }
 
   private func paramValid(param: String) -> Bool {
-    if param.characters.count != 1 {
-      return false
-    }
-    return false
+    return (param.characters.count == 1)
   }
 }

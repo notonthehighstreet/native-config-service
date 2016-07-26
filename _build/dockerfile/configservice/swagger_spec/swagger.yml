@@ -30,7 +30,7 @@ paths:
             type: array
             items:
               $ref: '#/definitions/HealthResponse'
-  /api-urls/{ABTestIdentifier}:
+  /config/{ABTestIdentifier}:
     get:
       security:
         - apikey: []
