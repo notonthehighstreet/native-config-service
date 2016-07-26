@@ -34,7 +34,7 @@ fi
 
 if [[ $1 != \ -g* ]]; then
   DIR=$(dirname `pwd`)
-  DOCKER_RUN="docker run --rm -it --net=minke_${NEW_UUID} -v ${DOCKER_SOCK} -v ${DIR}:${DIR} -v ${DIR}/_build/vendor/gems:${GEMSETFOLDER} -e DOCKER_NETWORK=minke_${NEW_UUID} -w ${DIR}/_build ${DOCKER_IMAGE} /bin/bash -c '${RVM_COMMAND} && ${COMMAND}'"
+  DOCKER_RUN="docker run --rm --net=minke_${NEW_UUID} -v ${DOCKER_SOCK} -v ${DIR}:${DIR} -v ${DIR}/_build/vendor/gems:${GEMSETFOLDER} -e DOCKER_NETWORK=minke_${NEW_UUID} -w ${DIR}/_build ${DOCKER_IMAGE} /bin/bash -c '${RVM_COMMAND} && ${COMMAND}'"
 
   echo "Running command: ${COMMAND}"
 
