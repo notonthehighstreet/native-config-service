@@ -20,6 +20,7 @@ private func setupLogger() {
 
 // Load the config from the json file
 private func loadConfig() -> JSON? {
+
   if Process.arguments.count < 2 {
     Log.error("Please specify config file")
 
@@ -30,6 +31,10 @@ private func loadConfig() -> JSON? {
   {
     let config = JSON(data: jsonData)
     Log.info("Loaded config: \(config)")
+
+    if config.count < 1 {
+      exit(1)
+    }
     return config
   }
 

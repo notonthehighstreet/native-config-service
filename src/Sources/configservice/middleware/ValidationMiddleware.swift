@@ -17,12 +17,11 @@ public class ValidationMiddleware: RouterMiddleware {
 
     Log.info("\(validParams) \(abBranch)")
 
-
     if validParams && abBranch != nil {
       next()
     } else {
       do {
-        Log.error("Invalid request")
+        Log.error("Invalid request - did not pass validation")
         statsD.increment(bucket: "\(Buckets.Application.rawValue).\(Buckets.ConfigHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Called.rawValue).\(Buckets.BadRequest.rawValue)")
         response.status(HTTPStatusCode.badRequest)
         try response.end()

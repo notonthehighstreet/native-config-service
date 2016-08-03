@@ -90,12 +90,12 @@
         };
         ___DebugConf_LoggerAPI = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/LoggerAPI_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/LoggerAPI_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_LoggerAPI = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/LoggerAPI_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/LoggerAPI_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_LoggerAPI = {
@@ -185,12 +185,12 @@
         };
         ___DebugConf_KituraSys = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/KituraSys_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraSys_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_KituraSys = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/KituraSys_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraSys_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_KituraSys = {
@@ -276,12 +276,12 @@
         };
         ___DebugConf_Socket = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/Socket_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Socket_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_Socket = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/Socket_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Socket_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_Socket = {
@@ -357,12 +357,12 @@
         };
         ___DebugConf_CHttpParser = {
             isa = XCBuildConfiguration;
-            buildSettings = { MODULEMAP_FILE = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser/include/module.modulemap'; ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/CHttpParser_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; DEFINES_MODULE = 'YES'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/CHttpParser_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; MODULEMAP_FILE = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser/include/module.modulemap'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; DEFINES_MODULE = 'YES'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_CHttpParser = {
             isa = XCBuildConfiguration;
-            buildSettings = { MODULEMAP_FILE = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser/include/module.modulemap'; ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/CHttpParser_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; DEFINES_MODULE = 'YES'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/CHttpParser_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; MODULEMAP_FILE = 'Packages/CHttpParser-0.1.1/Sources/CHttpParser/include/module.modulemap'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; DEFINES_MODULE = 'YES'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_CHttpParser = {
@@ -554,12 +554,12 @@
         };
         ___DebugConf_KituraNet = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/KituraNet_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraNet_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_KituraNet = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/KituraNet_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraNet_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_KituraNet = {
@@ -635,12 +635,12 @@
         };
         ___DebugConf_SwiftyJSON = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/SwiftyJSON_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/SwiftyJSON_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_SwiftyJSON = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/SwiftyJSON_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/SwiftyJSON_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_SwiftyJSON = {
@@ -706,12 +706,12 @@
         };
         ___DebugConf_KituraTemplateEngine = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_KituraTemplateEngine = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/KituraTemplateEngine_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_KituraTemplateEngine = {
@@ -1145,12 +1145,12 @@
         };
         ___DebugConf_Kitura = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/Kitura_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Kitura_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_Kitura = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/Kitura_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/Kitura_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_Kitura = {
@@ -1220,12 +1220,12 @@
         };
         ___DebugConf_HeliumLogger = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/HeliumLogger_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/HeliumLogger_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_HeliumLogger = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/HeliumLogger_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/HeliumLogger_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_HeliumLogger = {
@@ -1341,12 +1341,12 @@
         };
         ___DebugConf_StatsD = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/StatsD_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/StatsD_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_StatsD = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/StatsD_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/StatsD_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_StatsD = {
@@ -1502,12 +1502,12 @@
         };
         ___DebugConf_configservice = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configservice_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/configservice_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_configservice = {
             isa = XCBuildConfiguration;
-            buildSettings = { ENABLE_TESTABILITY = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configservice_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { INFOPLIST_FILE = 'configservice.xcodeproj/configservice_Info.plist'; ENABLE_TESTABILITY = 'YES'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_configservice = {
@@ -1630,12 +1630,12 @@
         };
         ___DebugConf_configserviceApp = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_configserviceApp = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_configserviceApp = {
@@ -1765,12 +1765,12 @@
         };
         ___DebugConf_configserviceTestSuite = {
             isa = XCBuildConfiguration;
-            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configserviceTestSuite_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configserviceTestSuite_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_configserviceTestSuite = {
             isa = XCBuildConfiguration;
-            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configserviceTestSuite_Info.plist'; OTHER_LDFLAGS = '$(inherited)'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; };
+            buildSettings = { EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; INFOPLIST_FILE = 'configservice.xcodeproj/configserviceTestSuite_Info.plist'; LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/src/Packages/CHttpParser-0.1.1/Sources/CHttpParser/include /src/Packages/CCurl-0.2.1'; OTHER_SWIFT_FLAGS = '$(inherited)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_configserviceTestSuite = {
