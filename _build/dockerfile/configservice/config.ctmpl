@@ -4,28 +4,32 @@
     "host": "{{key "configservice/Settings/statsd/host"}}",
     "port": {{key "configservice/Settings/statsd/port"}}
   },
-  "ios": {
-    "a": {
-      "base": "{{key "configservice/Settings/ios/a/base"}}",
-      "privacy_policy": "{{key "configservice/Settings/ios/a/privacy_policy"}}",
-      "version_check": "{{key "configservice/Settings/ios/a/version_check"}}",
-      "homepage": "{{key "configservice/Settings/ios/a/homepage"}}",
-      "homepage_favorites": "{{key "configservice/Settings/ios/a/homepage_favorites"}}",
-      "products": "{{key "configservice/Settings/ios/a/products"}}",
-      "products_availabilities": "{{key "configservice/Settings/ios/a/products_availabilities"}}",
-      "products_batched": "{{key "configservice/Settings/ios/a/products_batched"}}",
-      "products_validation": "{{key "configservice/Settings/ios/a/products_validation"}}",
-      "search": "{{key "configservice/Settings/ios/a/search"}}",
-      "search_suggested": "{{key "configservice/Settings/ios/a/search_suggested"}}",
-      "basket_validation": "{{key "configservice/Settings/ios/a/basket_validation"}}",
-      "delivery_services": "{{key "configservice/Settings/ios/a/delivery_services"}}",
-      "payment_methods": "{{key "configservice/Settings/ios/a/payment_methods"}}",
-      "addresses_postcode_lookup": "{{key "configservice/Settings/ios/a/addresses_postcode_lookup"}}",
-      "checkout": "{{key "configservice/Settings/ios/a/checkout"}}",
-      "checkout_customer": "{{key "configservice/Settings/ios/a/checkout_customer"}}",
-      "checkout_totals": "{{key "configservice/Settings/ios/a/checkout_totals"}}",
-      "checkout_purchase": "{{key "configservice/Settings/ios/a/checkout_purchase"}}",
-      "checkout_pay": "{{key "configservice/Settings/ios/a/checkout_pay"}}"
+  "config": {
+    "giftfinder": {
+      "default": {
+        "a": {
+          "base": "{{key "configservice/Settings/config/giftfinder/default/a/base"}}",
+          "privacy_policy": "{{key "configservice/Settings/config/giftfinder/default/a/privacy_policy"}}",
+          "version_check": "{{key "configservice/Settings/config/giftfinder/default/a/version_check"}}",
+          "homepage": "{{key "configservice/Settings/config/giftfinder/default/a/homepage"}}",
+          "homepage_favorites": "{{key "configservice/Settings/config/giftfinder/default/a/homepage_favorites"}}",
+          "products": "{{key "configservice/Settings/config/giftfinder/default/a/products"}}",
+          "products_availabilities": "{{key "configservice/Settings/config/giftfinder/default/a/products_availabilities"}}",
+          "products_batched": "{{key "configservice/Settings/config/giftfinder/default/a/products_batched"}}",
+          "products_validation": "{{key "configservice/Settings/config/giftfinder/default/a/products_validation"}}",
+          "search": "{{key "configservice/Settings/config/giftfinder/default/a/search"}}",
+          "search_suggested": "{{key "configservice/Settings/config/giftfinder/default/a/search_suggested"}}",
+          "basket_validation": "{{key "configservice/Settings/config/giftfinder/default/a/basket_validation"}}",
+          "delivery_services": "{{key "configservice/Settings/config/giftfinder/default/a/delivery_services"}}",
+          "payment_methods": "{{key "configservice/Settings/config/giftfinder/default/a/payment_methods"}}",
+          "addresses_postcode_lookup": "{{key "configservice/Settings/config/giftfinder/default/a/addresses_postcode_lookup"}}",
+          "checkout": "{{key "configservice/Settings/config/giftfinder/default/a/checkout"}}",
+          "checkout_customer": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_customer"}}",
+          "checkout_totals": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_totals"}}",
+          "checkout_purchase": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_purchase"}}",
+          "checkout_pay": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_pay"}}"
+        }
+      }
     }
   }
 }

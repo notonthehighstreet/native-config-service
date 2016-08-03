@@ -14,7 +14,7 @@ public class ConfigHandlerTests: XCTestCase {
   }
 
   private func getConfig() -> JSON {
-    return JSON(["ios": ["a": ["balls": "boobs"]]])
+    return JSON(["config": ["giftfinder": ["default": ["a": ["balls": "boobs"]]]]])
   }
 
   public func testReturnsHTTPStatusOKWithValidParams() {

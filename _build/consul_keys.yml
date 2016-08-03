@@ -5,31 +5,33 @@
       statsd:
         host: statsd
         port: 8125
-      ios:
-        a:
-          base: "notonthehighstreet.com"
-          privacy_policy: "about/privacy?no_header_and_footer=true"
+      config:
+        giftfinder:
+          default:
+            a:
+              base: "notonthehighstreet.com"
+              privacy_policy: "about/privacy?no_header_and_footer=true"
 
-          version_check: "version-check"
+              version_check: "version-check"
 
-          homepage: "iphone/homepage"
-          homepage_favorites: "iphone/favourites/?currencyCode=GBP&data=all"
+              homepage: "iphone/homepage"
+              homepage_favorites: "iphone/favourites/?currencyCode=GBP&data=all"
 
-          products: "products/%@?currencyCode=GBP"
-          products_availabilities: "products/availabilities"
-          products_batched: "products/batched/?currencyCode=GBP&"
-          products_validation: "product_validation/v1/product_validation"
+              products: "products/%@?currencyCode=GBP"
+              products_availabilities: "products/availabilities"
+              products_batched: "products/batched/?currencyCode=GBP&"
+              products_validation: "product_validation/v1/product_validation"
 
-          search: "products/search"
-          search_suggested: "https://suggestedsearch.%@/"
+              search: "products/search"
+              search_suggested: "https://suggestedsearch.%@/"
 
-          basket_validation: "carts"
-          delivery_services: "delivery_services/v1/delivery_services"
-          payment_methods: "payment_methods/v1/payment_methods"
-          addresses_postcode_lookup: "addresses/postcode-lookup?country=GB&postcode="
+              basket_validation: "carts"
+              delivery_services: "delivery_services/v1/delivery_services"
+              payment_methods: "payment_methods/v1/payment_methods"
+              addresses_postcode_lookup: "addresses/postcode-lookup?country=GB&postcode="
 
-          checkout: "checkout/v1/checkout"
-          checkout_customer: "checkout/v1/checkout/customer"
-          checkout_totals: "checkout/v1/totals"
-          checkout_purchase: "checkout/v1/purchase"
-          checkout_pay: "checkout/v1/checkout/%@/pay"
+              checkout: "checkout/v1/checkout"
+              checkout_customer: "checkout/v1/checkout/customer"
+              checkout_totals: "checkout/v1/totals"
+              checkout_purchase: "checkout/v1/purchase"
+              checkout_pay: "checkout/v1/checkout/%@/pay"
