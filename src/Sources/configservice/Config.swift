@@ -1,7 +1,7 @@
 import Foundation
 
 public enum Buckets: String {
-  case Application = "stockservice"
+  case Application = "configservice"
   case HealthHandler = "health"
   case ConfigHandler = "config"
   case Get = "get", Post = "post", Put = "put", Delete = "delete"
