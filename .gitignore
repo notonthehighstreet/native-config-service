@@ -4,3 +4,4 @@ vendor
 /_build/dockerfile/configservice/configserviceApp
 /src/Packages
 /src/configservice.xcodeproj/
+/src/build
