@@ -4,19 +4,19 @@ import KituraNet
 import StatsD
 import LoggerAPI
 import SwiftyJSON
-import configservice
+import ConfigService
 
-class Routing {
+public class Routing {
 
   let statsD: StatsDProtocol
   let config: JSON
 
-  init(statsD: StatsDProtocol, config: JSON) {
+  public init(statsD: StatsDProtocol, config: JSON) {
     self.statsD = statsD
     self.config = config
   }
 
-  func setupRouter() -> Router {
+  public func setupRouter() -> Router {
     let router = Router()
 
     setupHealthRoutes(router: router, path: "/v1/health")

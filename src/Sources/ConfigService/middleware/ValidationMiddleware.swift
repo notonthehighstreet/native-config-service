@@ -12,7 +12,7 @@ public class ValidationMiddleware: RouterMiddleware {
     self.statsD = statsD
   }
 
-  public func handle(request: RouterRequest, response: RouterResponse, next: () -> Void) {
+  public func handle(request: RouterRequest, response: RouterResponse, next: @escaping () -> Swift.Void) throws {
     let (validParams, abBranch) = validateParams(params: request.parameters)
 
     Log.info("\(validParams) \(abBranch)")
@@ -22,7 +22,7 @@ public class ValidationMiddleware: RouterMiddleware {
     } else {
       do {
         Log.error("Invalid request - did not pass validation")
-        statsD.increment(bucket: "\(Buckets.Application.rawValue).\(Buckets.ConfigHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Called.rawValue).\(Buckets.BadRequest.rawValue)")
+        statsD.increment(bucket: "\(Buckets.application.rawValue).\(Buckets.configHandler.rawValue).\(Buckets.gett.rawValue).\(Buckets.called.rawValue).\(Buckets.badRequest.rawValue)")
         response.status(HTTPStatusCode.badRequest)
         try response.end()
       } catch {

@@ -1,13 +1,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "configservice",
+    name: "ConfigService",
     targets: [
       Target(
-        name: "configserviceApp",
-        dependencies: [.Target(name: "configservice")]),
+        name: "ConfigServiceApp",
+        dependencies: [.Target(name: "ConfigService")]),
       Target(
-        name: "configservice")
+        name: "ConfigService")
     ],
     dependencies: [
       .Package(url: "https://github.com/IBM-Swift/Kitura.git", majorVersion: 0, minor: 28),

@@ -3,7 +3,7 @@ import XCTest
 import SwiftyJSON
 import KituraNet
 
-@testable import configservice
+@testable import ConfigService
 @testable import StatsD
 
 public class HealthHandlerTests: XCTestCase {

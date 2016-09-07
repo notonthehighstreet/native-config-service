@@ -8,7 +8,7 @@ import LoggerAPI
 import SwiftyJSON
 
 import StatsD
-import configservice
+import ConfigService
 
 var config: JSON? = nil
 var statsD: StatsD? = nil
@@ -21,15 +21,15 @@ private func setupLogger() {
 // Load the config from the json file
 private func loadConfig() -> JSON? {
 
-  if Process.arguments.count < 2 {
+  if CommandLine.arguments.count < 2 {
     Log.error("Please specify config file")
 
     return nil
   }
 
-  if let jsonData = NSData(contentsOfFile: Process.arguments[1])
+  if let jsonData = NSData(contentsOfFile: CommandLine.arguments[1])
   {
-    let config = JSON(data: jsonData)
+    let config = JSON(data: jsonData as Data)
     Log.info("Loaded config: \(config)")
 
     if config.count < 1 {
@@ -47,7 +47,7 @@ statsD = Metrics().setupStatsD()
 router = Routing(statsD: statsD!, config: config!).setupRouter()
 
 Log.info("Starting Server on port 8090:")
-statsD!.increment(bucket: "\(Buckets.Application.rawValue).\(Buckets.Started.rawValue)")
+statsD!.increment(bucket: "\(Buckets.application.rawValue).\(Buckets.started.rawValue)")
 
 Kitura.addHTTPServer(onPort: 8090, with: router!)
 Kitura.run()

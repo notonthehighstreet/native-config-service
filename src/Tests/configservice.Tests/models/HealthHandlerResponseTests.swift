@@ -3,7 +3,7 @@ import XCTest
 
 import SwiftyJSON
 
-@testable import configservice
+@testable import ConfigService
 
 public class HealthHandlerResponseTests: XCTestCase {
   public func testSerializesObject() {
