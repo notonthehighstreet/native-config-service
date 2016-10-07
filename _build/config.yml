@@ -19,7 +19,10 @@ build:
   post:
     copy:
       -
-        from: '../src/.build/debug/configserviceApp'
+        from: '../src/.build/release/configserviceApp'
+        to: './dockerfile/configservice'
+      -
+        from: '../src/.build/release/libCHTTPParser.so'
         to: './dockerfile/configservice'
       -
         from: './swagger_spec/swagger.yml'

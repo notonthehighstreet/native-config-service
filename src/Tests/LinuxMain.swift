@@ -1,7 +1,7 @@
 import XCTest
 import StatsD
 
-@testable import configserviceTestSuite
+@testable import configserviceTests
 
 XCTMain([
   testCase(HealthHandlerResponseTests.allTests),

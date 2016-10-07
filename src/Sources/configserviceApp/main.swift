@@ -1,7 +1,8 @@
 import Foundation
+import Swift
 
 import Kitura
-import KituraSys
+//import KituraSys
 import KituraNet
 import HeliumLogger
 import LoggerAPI
@@ -20,15 +21,18 @@ private func setupLogger() {
 
 // Load the config from the json file
 private func loadConfig() -> JSON? {
+  var args: [String] = CommandLine.arguments
 
-  if Process.arguments.count < 2 {
+  if args.count < 2 {
     Log.error("Please specify config file")
 
     return nil
   }
 
-  if let jsonData = NSData(contentsOfFile: Process.arguments[1])
+  let url = URL(fileURLWithPath: args[1])
+  do
   {
+    let jsonData = try Data(contentsOf: url, options: .uncached)
     let config = JSON(data: jsonData)
     Log.info("Loaded config: \(config)")
 
@@ -36,9 +40,9 @@ private func loadConfig() -> JSON? {
       exit(1)
     }
     return config
+  } catch {
+    return nil
   }
-
-  return nil
 }
 
 setupLogger()
