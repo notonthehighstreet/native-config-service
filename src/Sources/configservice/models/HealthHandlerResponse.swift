@@ -9,6 +9,6 @@ struct HealthHandlerResponse {
   }
 
   func serialize() -> JSONDictionary {
-    return ["status_message": statusMessage]
+    return ["status_message": statusMessage as Any]
   }
 }

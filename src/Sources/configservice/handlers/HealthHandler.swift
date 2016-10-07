@@ -7,10 +7,10 @@ import StatsD
 
 public class HealthHandler {
 
-  public static func handle(statsD: StatsDProtocol, complete: (status: HTTPStatusCode, data: JSON?) -> Void) -> Void {
+  public static func handle(statsD: StatsDProtocol, complete: (_: HTTPStatusCode, _: JSON?) -> Void) -> Void {
     statsD.timer(bucket: "\(Buckets.Application.rawValue).\(Buckets.HealthHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Timing.rawValue)") {
       let result = HealthHandlerResponse(statusMessage: "OK it's fine")
-      complete(status: HTTPStatusCode.OK, data: JSON(result.serialize()))
+      complete(HTTPStatusCode.OK, JSON(result.serialize()))
     }
   }
 

@@ -12,7 +12,7 @@ public class ValidationMiddleware: RouterMiddleware {
     self.statsD = statsD
   }
 
-  public func handle(request: RouterRequest, response: RouterResponse, next: () -> Void) {
+  public func handle(request: RouterRequest, response: RouterResponse, next: @escaping () -> Void) throws {
     let (validParams, abBranch) = validateParams(params: request.parameters)
 
     Log.info("\(validParams) \(abBranch)")

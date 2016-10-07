@@ -6,7 +6,7 @@ services:
     ports:
       - "::8090"
     environment:
-      - "CONSUL_URI=consul:8500"
+      - "CONSUL=consul:8500"
     links:
       - statsd:statsd
   statsd:

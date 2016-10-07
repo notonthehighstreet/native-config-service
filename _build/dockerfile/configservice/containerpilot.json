@@ -1,0 +1,7 @@
+{
+  "consul": "http://{{ .CONSUL }}",
+  "preStart": [
+    "consul-template", "-once", "-consul", "{{ .CONSUL }}", "-template",
+    "/configservice/config.ctmpl:/configservice/config.json"
+  ]
+}
