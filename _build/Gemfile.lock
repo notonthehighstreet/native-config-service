@@ -1,21 +1,3 @@
-PATH
-  remote: /Users/nicj/Developer/gems/minke-generator-swift
-  specs:
-    minke-generator-swift (0.4)
-
-PATH
-  remote: /Users/nicj/Developer/gems/minke
-  specs:
-    minke (1.13.9)
-      colorize
-      consul_loader (~> 1.0)
-      cucumber
-      docker-api
-      multi_json
-      rake (~> 10.0)
-      rest-client (~> 1.8)
-      sshkey
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -54,6 +36,16 @@ GEM
       multi_json
     mime-types (2.99.3)
     mini_portile2 (2.1.0)
+    minke (1.13.10)
+      colorize
+      consul_loader (~> 1.0)
+      cucumber
+      docker-api
+      multi_json
+      rake (~> 10.0)
+      rest-client (~> 1.8)
+      sshkey
+    minke-generator-swift (0.4)
     multi_json (1.12.1)
     multi_test (0.1.2)
     netrc (0.11.0)
@@ -87,8 +79,8 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber-rest-api (= 0.3)
-  minke!
-  minke-generator-swift!
+  minke
+  minke-generator-swift
 
 BUNDLED WITH
    1.13.2
