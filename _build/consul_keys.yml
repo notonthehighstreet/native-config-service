@@ -21,6 +21,8 @@
               products_availabilities: "products/availabilities"
               products_batched: "products/batched/?currencyCode=GBP&"
               products_validation: "product_validation/v1/product_validation"
+              products_category: "?currencyCode=GBP&perPage=20&data=all"
+              products_internal_endpoint: "/internal/products/from-uri"
 
               search: "products/search"
               search_suggested: "https://suggestedsearch.%@/"
@@ -35,3 +37,6 @@
               checkout_totals: "checkout/v1/totals"
               checkout_purchase: "checkout/v1/purchase"
               checkout_pay: "checkout/v1/checkout/%@/pay"
+              checkout_state: "checkout/v1/checkout/%@"
+
+              personality: "iphone/personality-types"

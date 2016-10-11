@@ -27,7 +27,11 @@
           "checkout_customer": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_customer"}}",
           "checkout_totals": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_totals"}}",
           "checkout_purchase": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_purchase"}}",
-          "checkout_pay": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_pay"}}"
+          "checkout_pay": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_pay"}}",
+          "products_category": "{{key "configservice/Settings/config/giftfinder/default/a/products_category"}}",
+          "products_internal_endpoint": "{{key "configservice/Settings/config/giftfinder/default/a/products_internal_endpoint"}}",
+          "checkout_state": "{{key "configservice/Settings/config/giftfinder/default/a/checkout_state"}}",
+          "personality": "{{key "configservice/Settings/config/giftfinder/default/a/personality"}}"
         }
       }
     }
