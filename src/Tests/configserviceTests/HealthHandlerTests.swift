@@ -16,6 +16,7 @@ public class HealthHandlerTests: XCTestCase {
   public func testReturnsHTTPStatusOK() {
     HealthHandler.handle(statsD: mockStatsD!) {
       (status: HTTPStatusCode, data: JSON?) in
+
         XCTAssertEqual(HTTPStatusCode.OK, status)
     }
   }
@@ -23,6 +24,7 @@ public class HealthHandlerTests: XCTestCase {
   public func testReturnsValidResponse() {
     HealthHandler.handle(statsD: mockStatsD!) {
       (status: HTTPStatusCode, data: JSON?) in
+
         XCTAssertEqual("OK it's fine", data!["status_message"])
     }
   }

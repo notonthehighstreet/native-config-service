@@ -2,7 +2,6 @@ import Foundation
 import Swift
 
 import Kitura
-//import KituraSys
 import KituraNet
 import HeliumLogger
 import LoggerAPI
@@ -51,7 +50,7 @@ statsD = Metrics().setupStatsD()
 router = Routing(statsD: statsD!, config: config!).setupRouter()
 
 Log.info("Starting Server on port 8090:")
-statsD!.increment(bucket: "\(Buckets.Application.rawValue).\(Buckets.Started.rawValue)")
+statsD!.increment(bucket: Buckets.Started.rawValue)
 
 Kitura.addHTTPServer(onPort: 8090, with: router!)
 Kitura.run()

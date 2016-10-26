@@ -1,0 +1,13 @@
+current directory: /Users/nicj/Developer/swift/native-config-service/_build/vendor/gems/json-2.0.2/ext/json
+/usr/local/bin/ruby -r ./siteconf20161026-7-12k8y6f.rb extconf.rb
+creating Makefile
+
+current directory: /Users/nicj/Developer/swift/native-config-service/_build/vendor/gems/json-2.0.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/nicj/Developer/swift/native-config-service/_build/vendor/gems/json-2.0.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /Users/nicj/Developer/swift/native-config-service/_build/vendor/gems/json-2.0.2/ext/json
+make "DESTDIR=" install

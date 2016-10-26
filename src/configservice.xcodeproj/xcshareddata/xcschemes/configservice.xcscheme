@@ -5,7 +5,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_LoggerAPI"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "LoggerAPI"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -14,7 +13,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_Socket"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "Socket"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -23,7 +21,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_CHTTPParser"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "CHTTPParser"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -32,7 +29,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_SSLService"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "SSLService"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -41,7 +37,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_KituraNet"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "KituraNet"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -50,7 +45,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_SwiftyJSON"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "SwiftyJSON"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -59,7 +53,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_KituraTemplateEngine"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "KituraTemplateEngine"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -68,7 +61,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_Kitura"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "Kitura"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -77,7 +69,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_HeliumLogger"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "HeliumLogger"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -86,7 +77,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_StatsD"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "StatsD"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -95,7 +85,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_configservice"
           BuildableName = "'lib$(TARGET_NAME)'"
           BlueprintName = "configservice"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -104,7 +93,6 @@
       <BuildActionEntry buildForTesting = "YES" buildForRunning = "YES" buildForProfiling = "YES" buildForArchiving = "YES" buildForAnalyzing = "YES">
         <BuildableReference
           BuildableIdentifier = "primary"
-          BlueprintIdentifier = "______Target_configserviceApp"
           BuildableName = "'$(TARGET_NAME)'"
           BlueprintName = "configserviceApp"
           ReferencedContainer = "container:configservice.xcodeproj">
@@ -123,7 +111,6 @@
       skipped = "NO">
       <BuildableReference
         BuildableIdentifier = "primary"
-        BlueprintIdentifier = "______Target_configserviceTests"
         BuildableName = "'$(TARGET_NAME)'"
         BlueprintName = "configserviceTests"
         ReferencedContainer = "container:configservice.xcodeproj">

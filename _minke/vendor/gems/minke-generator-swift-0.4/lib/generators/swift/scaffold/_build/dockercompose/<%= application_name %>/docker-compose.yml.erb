@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  <%= application_name %>:
+    image: <%= application_name %>
+    ports:
+      - "::8090"
+    environment:
+      - "CONSUL_URI=consul:8500"
+    links:
+      - statsd:statsd
+  statsd:
+    image: 'hopsoft/graphite-statsd:latest'
+    ports:
+      - "::80"
+    expose:
+      - "8125/udp"
+  registrator:
+    image: 'gliderlabs/registrator:latest'
+    command: '-internal -tags=dev consul://consul:8500'
+    volumes:
+      - '/var/run/docker.sock:/tmp/docker.sock'

@@ -1,7 +1,0 @@
-source 'https://rubygems.org'
-
-gem "cucumber-rest-api", "= 0.3"
-gem 'minke'
-#gem 'minke', :path => '/Users/nicj/Developer/gems/minke'
-gem 'minke-generator-swift' # Update this to the name of your gem
-#gem 'minke-generator-swift', :path => '/Users/nicj/Developer/gems/minke-generator-swift'

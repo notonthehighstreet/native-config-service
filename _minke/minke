@@ -1,0 +1,40 @@
+#!/bin/bash
+MINKE_VERSION="1.13.16"
+
+DOCKER_SOCK="/var/run/docker.sock:/var/run/docker.sock"
+NEW_UUID=$(base64 /dev/urandom | tr -d '/+' | head -c 32 | tr '[:upper:]' '[:lower:]')
+
+DOCKER_IMAGE="nicholasjackson/minke:${MINKE_VERSION}"
+
+COMMAND=$*
+
+GEM_VOLUMES=""
+
+# Test if interactive terminal and set the flag
+[[ -t 1 ]] && IT="-it" || IT=""
+
+if [[ $1 != \generate* ]]; then
+  # Test if we need to mount any special volumes for paths specified in the Gemfile
+  while read -r line; do
+		if [[ $line != \#* ]]; then
+			l=$(echo $line | sed "s/.*:path *=> *//" | sed "s/['|\"]\(.*\)['|\"]/\1/")
+ 			GEM_VOLUMES="${GEM_VOLUMES} -v $l:$l"
+		fi
+  done < <(grep :path Gemfile)
+
+  DIR=$(dirname `pwd`)
+  DOCKER_RUN="docker run ${IT} --rm --net=minke_${NEW_UUID} ${GEM_VOLUMES} -v ${DOCKER_SOCK} -v ${DIR}:${DIR} -e BUNDLE_PATH=${PWD}/vendor -e BUNDLE_JOBS=2 -e DOCKER_NETWORK=minke_${NEW_UUID} -w ${DIR}/_minke ${DOCKER_IMAGE} ${COMMAND}"
+
+  echo "Running command: minke ${COMMAND}"
+
+  id=$(docker network create minke_${NEW_UUID})
+  
+  eval "${DOCKER_RUN}"
+  id=$(docker network rm minke_${NEW_UUID})
+fi
+
+if [[ $1 = \generate* ]]; then
+  DIR=$(pwd)
+  DOCKER_RUN="docker run --rm -v ${DOCKER_SOCK} -v ${DIR}:${DIR} -w ${DIR}:${DIR} ${DOCKER_IMAGE} ${COMMAND}"
+  eval "$DOCKER_RUN"
+fi

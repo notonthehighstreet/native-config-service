@@ -18,54 +18,51 @@ public class ConfigHandlerTests: XCTestCase {
   }
 
   public func testReturnsHTTPStatusOKWithValidParams() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), abBranch: "a" ) {
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "a" ) {
       (status: HTTPStatusCode, data: JSON?) in
+
         XCTAssertEqual(HTTPStatusCode.OK, status)
     }
   }
 
   public func testReturnsValidResponse() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), abBranch: "a" ) {
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "a" ) {
       (status: HTTPStatusCode, data: JSON?) in
+
         XCTAssertEqual("boobs", data!["balls"])
     }
   }
 
   public func testServiceReturnsBadRequestWhenBranchNotExistInConfig() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), abBranch: "ab" ) {
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "ab" ) {
       (status: HTTPStatusCode, data: JSON?) in
+
         XCTAssertEqual(HTTPStatusCode.badRequest, status)
         XCTAssertNil(data)
     }
   }
 
   public func testCallsStatsDWhenOK() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), abBranch: "a" ) {
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "a" ) {
         (status: HTTPStatusCode, data: JSON?) in
-      XCTAssertEqual(
-        "\(Buckets.Application.rawValue).\(Buckets.ConfigHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Called.rawValue).\(Buckets.Success.rawValue).Branch.a",
-          self.mockStatsD!.incrementBucket,
-          "OK")
+
+        let bucket = Buckets.ConfigHandler.rawValue +
+                     Buckets.Get.rawValue +
+                     ".branch.a" + Buckets.Success.rawValue
+
+        XCTAssertEqual(bucket, self.mockStatsD!.incrementBucket, "OK")
     }
   }
 
   public func testCallsStatsDWhenABBranchNotPresent() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), abBranch: "e" ) {
+    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "e" ) {
       (status: HTTPStatusCode, data: JSON?) in
-      XCTAssertEqual(
-          "\(Buckets.Application.rawValue).\(Buckets.ConfigHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Called.rawValue).\(Buckets.BadRequest.rawValue)",
-          self.mockStatsD!.incrementBucket,
-          "Incorrect bucket for timing")
-    }
-  }
 
-  public func testCallsStatsDWithBranch() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), abBranch: "a" ) {
-      (status: HTTPStatusCode, data: JSON?) in
-      XCTAssertEqual(
-          "\(Buckets.Application.rawValue).\(Buckets.ConfigHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Called.rawValue).\(Buckets.Success.rawValue).Branch.a",
-          self.mockStatsD!.incrementBucket,
-          "OK")
+        let bucket = Buckets.ConfigHandler.rawValue +
+                     Buckets.Get.rawValue +
+                     ".branch.e" + Buckets.BadRequest.rawValue
+
+        XCTAssertEqual(bucket, self.mockStatsD!.incrementBucket, "Incorrect bucket for timing")
     }
   }
 }
@@ -75,10 +72,10 @@ extension ConfigHandlerTests {
     return [
       ("testReturnsHTTPStatusOKWithValidParams", testReturnsHTTPStatusOKWithValidParams),
       ("testReturnsValidResponse", testReturnsValidResponse),
-      ("testServiceReturnsBadRequestWhenBranchNotExistInConfig", testServiceReturnsBadRequestWhenBranchNotExistInConfig),
+      ("testServiceReturnsBadRequestWhenBranchNotExistInConfig",
+        testServiceReturnsBadRequestWhenBranchNotExistInConfig),
       ("testCallsStatsDWhenOK", testCallsStatsDWhenOK),
       ("testCallsStatsDWhenABBranchNotPresent", testCallsStatsDWhenABBranchNotPresent),
-      ("testCallsStatsDWithBranch", testCallsStatsDWithBranch)
     ]
   }
 }

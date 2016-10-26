@@ -7,6 +7,10 @@ import LoggerAPI
 public class ValidationMiddleware: RouterMiddleware {
 
   let statsD: StatsDProtocol
+  let badRequestTag = Buckets.ValidationHandler.rawValue +
+                      Buckets.Get.rawValue +
+                      Buckets.Called.rawValue +
+                      Buckets.BadRequest.rawValue
 
   public init(statsD: StatsDProtocol) {
     self.statsD = statsD
@@ -22,8 +26,10 @@ public class ValidationMiddleware: RouterMiddleware {
     } else {
       do {
         Log.error("Invalid request - did not pass validation")
-        statsD.increment(bucket: "\(Buckets.Application.rawValue).\(Buckets.ConfigHandler.rawValue).\(Buckets.Get.rawValue).\(Buckets.Called.rawValue).\(Buckets.BadRequest.rawValue)")
+
+        statsD.increment(bucket: badRequestTag)
         response.status(HTTPStatusCode.badRequest)
+
         try response.end()
       } catch {
         Log.error("Error")
@@ -32,6 +38,7 @@ public class ValidationMiddleware: RouterMiddleware {
   }
 
   private func validateParams(params: [String: String]?) -> (valid: Bool, branch: String?) {
+    
     if params != nil, let branch = params!["abBranch"] {
       let valid =  paramValid(param: branch)
       return (valid, branch)
