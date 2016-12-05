@@ -45,7 +45,7 @@ GEM
       rake (~> 10.0)
       rest-client (~> 1.8)
       sshkey
-    minke-generator-swift (0.4)
+    minke-generator-swift (0.5)
     multi_json (1.12.1)
     multi_test (0.1.2)
     netrc (0.11.0)
@@ -80,7 +80,7 @@ PLATFORMS
 DEPENDENCIES
   cucumber-rest-api (= 0.3)
   minke (= 1.13.16)
-  minke-generator-swift
+  minke-generator-swift (= 0.5)
 
 BUNDLED WITH
    1.13.6

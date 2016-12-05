@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  statsd:
+    image: 'hopsoft/graphite-statsd:latest'
+    ports:
+      - "8180:80"
+      - "8125:8125/udp"
+  registrator:
+    image: 'gliderlabs/registrator:latest'
+    command: '-internal -tags=dev consul://consul:8500'
+    volumes:
+      - '/var/run/docker.sock:/tmp/docker.sock'
