@@ -14,28 +14,53 @@ public class ConfigHandlerTests: XCTestCase {
   }
 
   private func getConfig() -> JSON {
-    return JSON(["config": ["giftfinder": ["default": ["a": ["balls": "boobs"]]]]])
+    return JSON(["config": ["giftfinder": ["default": ["a": ["homepage": "http://myhome.com"]]]]])
   }
 
   public func testReturnsHTTPStatusOKWithValidParams() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "a" ) {
-      (status: HTTPStatusCode, data: JSON?) in
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "giftfinder",
+      branch:      "a" ) {
+        (status: HTTPStatusCode, data: JSON?) in
 
         XCTAssertEqual(HTTPStatusCode.OK, status)
     }
   }
 
   public func testReturnsValidResponse() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "a" ) {
-      (status: HTTPStatusCode, data: JSON?) in
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "giftfinder",
+      branch:      "a" ) {
+        (status: HTTPStatusCode, data: JSON?) in
 
-        XCTAssertEqual("boobs", data!["balls"])
+        XCTAssertEqual("http://myhome.com", data!["homepage"])
+    }
+  }
+
+  public func testServiceReturnsBadRequestWhenApplicationNotExistInConfig() {
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "sounds",
+      branch:      "a" ) {
+        (status: HTTPStatusCode, data: JSON?) in
+
+        XCTAssertEqual(HTTPStatusCode.badRequest, status)
+        XCTAssertNil(data)
     }
   }
 
   public func testServiceReturnsBadRequestWhenBranchNotExistInConfig() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "ab" ) {
-      (status: HTTPStatusCode, data: JSON?) in
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "giftfinder",
+      branch:      "ab" ) {
+        (status: HTTPStatusCode, data: JSON?) in
 
         XCTAssertEqual(HTTPStatusCode.badRequest, status)
         XCTAssertNil(data)
@@ -43,7 +68,11 @@ public class ConfigHandlerTests: XCTestCase {
   }
 
   public func testCallsStatsDWhenOK() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "a" ) {
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "giftfinder",
+      branch:      "a" ) {
         (status: HTTPStatusCode, data: JSON?) in
 
         let bucket = Buckets.ConfigHandler.rawValue +
@@ -54,9 +83,29 @@ public class ConfigHandlerTests: XCTestCase {
     }
   }
 
-  public func testCallsStatsDWhenABBranchNotPresent() {
-    ConfigHandler.handle(statsD: mockStatsD!, config: getConfig(), branch: "e" ) {
-      (status: HTTPStatusCode, data: JSON?) in
+  public func testCallsStatsDWhenBranchNotPresent() {
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "giftfinder",
+      branch:      "e" ) {
+        (status: HTTPStatusCode, data: JSON?) in
+
+        let bucket = Buckets.ConfigHandler.rawValue +
+                     Buckets.Get.rawValue +
+                     ".branch.e" + Buckets.BadRequest.rawValue
+
+        XCTAssertEqual(bucket, self.mockStatsD!.incrementBucket, "Incorrect bucket for timing")
+    }
+  }
+
+  public func testCallsStatsDWhenApplicationNotPresent() {
+    ConfigHandler.handle(
+      statsD:      mockStatsD!,
+      config:      getConfig(),
+      application: "sounds",
+      branch:      "e" ) {
+        (status: HTTPStatusCode, data: JSON?) in
 
         let bucket = Buckets.ConfigHandler.rawValue +
                      Buckets.Get.rawValue +
@@ -74,8 +123,11 @@ extension ConfigHandlerTests {
       ("testReturnsValidResponse", testReturnsValidResponse),
       ("testServiceReturnsBadRequestWhenBranchNotExistInConfig",
         testServiceReturnsBadRequestWhenBranchNotExistInConfig),
+      ("testServiceReturnsBadRequestWhenApplicationNotExistInConfig",
+        testServiceReturnsBadRequestWhenApplicationNotExistInConfig),
       ("testCallsStatsDWhenOK", testCallsStatsDWhenOK),
-      ("testCallsStatsDWhenABBranchNotPresent", testCallsStatsDWhenABBranchNotPresent),
+      ("testCallsStatsDWhenBranchNotPresent", testCallsStatsDWhenBranchNotPresent),
+      ("testCallsStatsDWhenApplicationNotPresent", testCallsStatsDWhenApplicationNotPresent),
     ]
   }
 }

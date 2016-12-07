@@ -34,8 +34,8 @@ public class ValidationMiddleware {
     }
   }
 
-  private func validateParams(params: [String: String]?) -> (valid: Bool, branch: String?) {
-    if params != nil, let branch = params!["branch"] {
+  private func validateParams(params: [String: String]) -> (valid: Bool, branch: String?) {
+    if let branch = params["branch"] {
       let valid =  paramValid(param: branch)
       return (valid, branch)
     }

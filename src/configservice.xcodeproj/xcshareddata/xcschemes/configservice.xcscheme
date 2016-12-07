@@ -22,7 +22,7 @@
         <BuildableReference
           BuildableIdentifier = "primary"
           BuildableName = "'lib$(TARGET_NAME)'"
-          BlueprintName = "CHTTPParser"
+          BlueprintName = "SSLService"
           ReferencedContainer = "container:configservice.xcodeproj">
         </BuildableReference>
       </BuildActionEntry>
@@ -30,7 +30,7 @@
         <BuildableReference
           BuildableIdentifier = "primary"
           BuildableName = "'lib$(TARGET_NAME)'"
-          BlueprintName = "SSLService"
+          BlueprintName = "CHTTPParser"
           ReferencedContainer = "container:configservice.xcodeproj">
         </BuildableReference>
       </BuildActionEntry>

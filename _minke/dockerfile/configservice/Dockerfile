@@ -10,7 +10,7 @@ RUN mkdir /var/log/configservice
 
 # Install containerpilot and consul-template
 RUN apt-get update
-RUN yes | apt-get install wget tar unzip
+RUN apt-get -y install wget tar unzip curl
 
 ENV CONTAINERPILOT_VERSION 2.1.2
 ENV CONTAINERPILOT file:///etc/containerpilot.json
