@@ -1,5 +1,5 @@
 # App Config Service
-App Config Service is a Docker based microservice written in swift, it enables \\you to provide application level config for your applications.  It is currently running in production at notonthehigstreet.com providing the configuration elements for our main iOS and AppleTV applications.
+App Config Service is a Docker based microservice written in swift, it enables you to provide application level config for your applications.  It is currently running in production at notonthehigstreet.com providing the configuration elements for our main iOS and AppleTV applications.
 
 ## Overview
 The application retrieves the configuration from a Consul [https://www.consul.io](https://www.consul.io) server which is a highly distributed key value store. Consul template runs inside the container and listens for changes to the data in Consul, either first run or when a change is detected Consul template retrieves the data and transforms it into a JSON formatted config file which the server reads.  When the client connects to the service using the RESTful API the service returns the requested config from the internal store and returns this as JSON.
