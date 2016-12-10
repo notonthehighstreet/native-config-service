@@ -5,10 +5,10 @@ import LoggerAPI
 public struct ConfigLoader {
   
   public static func load(commandLineArgs args: [String]) -> JSON? {
+    
     guard let url = configFilePath(commandLineArgs: args) else { return nil }
     
-    do
-    {
+    do {
       let jsonData = try Data(contentsOf: url, options: .uncached)
       return load(data: jsonData)
     } catch {
