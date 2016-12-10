@@ -5,7 +5,7 @@ import SwiftyJSON
 
 import StatsD
 
-public class HealthHandler {
+public final class HealthHandler {
 
   static let timingTag = Buckets.HealthHandler.rawValue +
                          Buckets.Get.rawValue + 

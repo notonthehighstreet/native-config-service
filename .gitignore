@@ -2,4 +2,8 @@
 .DS_Store
 /_build/dockerfile/configservice/configserviceApp
 /src/Packages
-/src/configservice.xcodeproj/
+/src/configservice.xcodeproj
+/_minke/dockerfile/configservice/configserviceApp
+/src/configservice.xcodeproj/xcshareddata/xcschemes/configservice.xcscheme
+/_minke/dockercompose/configservice/tmp_docker-compose.yml
+/src/configservice.xcodeproj/**

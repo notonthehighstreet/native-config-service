@@ -1,27 +1,40 @@
 import StatsD
 import LoggerAPI
 import Socket
+import SwiftyJSON
 
-class Metrics {
+struct Metrics {
 
-  func setupStatsD() -> StatsD {
-    let host = config!["statsd", "host"].stringValue
-    let port = config!["statsd", "port"].intValue
-
-    let socket = UDPSocket()
-    return StatsD(
-      host: host,
-      port: port,
-      socket: socket,
-      interval: 1.0,
-       sendCallback: { (success: Bool, error: SocketError?) in
-         if success {
-           Log.info("Sent data to StatsD")
-         } else {
-           Log.error("Failed to send data to StatsD \(error)")
-         }
-       }
-    )
+  static func setupStatsD(config: JSON) -> StatsD {
+    
+    let host          = config[Key.statsD, Key.host].stringValue
+    let port          = config[Key.statsD, Key.port].intValue
+    let socket        = UDPSocket()
+    let sendCallback  = callback()
+    
+    return StatsD(host: host,
+                  port: port,
+                  socket: socket,
+                  interval: 1.0,
+                  sendCallback: sendCallback)
   }
-
+  
+  private static func callback() -> ((Bool, SocketError?) -> Void) {
+    
+    return { (success: Bool, error: SocketError?) in
+      guard success else {
+        Log.error("Failed to send data to StatsD \(error)")
+        return
+      }
+      
+      Log.info("Sent data to StatsD")
+    }
+  }
+  
+  private struct Key {
+    static let statsD = "statsd"
+    static let host   = "host"
+    static let port   = "port"
+  }
+  
 }
