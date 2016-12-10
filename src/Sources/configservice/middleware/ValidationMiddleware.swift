@@ -4,7 +4,7 @@ import Kitura
 import KituraNet
 import LoggerAPI
 
-public class ValidationMiddleware {
+public final class ValidationMiddleware {
 
   let statsD: StatsDProtocol
   let minLength: Int
@@ -20,27 +20,27 @@ public class ValidationMiddleware {
   }
 
   public func handle(parameters: [String: String], complete: ((_ success: Bool) -> Void)) {
+    
     let (validParams, branch)  = validateParams(params: parameters)
-
     Log.info("\(validParams) \(branch)")
 
-    if validParams && branch != nil {
-      complete(true)
-    } else {
+    guard validParams && branch != nil else {
       Log.error("Invalid request - did not pass validation")
-
+      
       statsD.increment(bucket: badRequestTag)
       complete(false)
+      return
     }
+    
+    complete(true)
   }
 
   private func validateParams(params: [String: String]) -> (valid: Bool, branch: String?) {
-    if let branch = params["branch"] {
-      let valid =  paramValid(param: branch)
-      return (valid, branch)
-    }
-
-    return (false, nil)
+    let branchKey = Parameters.Route.branch.rawValue
+    guard let branch = params[branchKey] else { return (false, nil) }
+    let valid = paramValid(param: branch)
+    
+    return (valid, branch)
   }
 
   private func paramValid(param: String) -> Bool {
